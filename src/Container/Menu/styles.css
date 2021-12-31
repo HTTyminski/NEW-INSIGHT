@@ -1,0 +1,102 @@
+.flex-container {
+    display: grid;
+}
+.topMenu {
+    width: 100vw;
+    height: 10vh;
+    background-color: rgb(51, 50, 50);
+}
+.containerMenu {
+    display: flex;
+    width: 100vw;
+    background-color: #2144C0;
+}
+.botMenu {
+    width: 100vw;
+    height: 10vh;
+    background-color: rgb(51, 50, 50);
+}
+.leftMenu {
+    display: grid;
+    width: 20vw;
+    background-color: #0062dc;
+    justify-content: center;
+    align-items: center;
+}
+.leftMenuCenter {
+    width: 220px;
+    height: 62px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: #ffffff;
+}
+.fontLeft {
+    margin-right: 19px;
+    font-weight: 600;
+    font-size: 57px;
+    color: #167ffd;
+}
+.fontRight {
+    color: #7db8ff;
+    font-weight: 600;
+}
+.leftMenuTitle {
+    font-size: 20px;
+}
+.borderLeft {
+    position: absolute;
+    left: 0;
+    width: 6px;
+    background-color: #ffffff;
+}
+.rightMenu {
+    background-color: #2157d2;
+}
+.rightTopMenu {
+    padding-left: 40px;
+    display: flex;
+    width: 300px;
+    height: 41px;
+}
+.rightTopMenuM {
+    padding-left: 40px;
+    display: flex;
+    height: 41px;
+}
+.rightBotMenu {
+    padding-left: 40px;
+    width: 148px;
+    height: 105px;
+}
+.rightMiddleMenu {
+    display: flex;
+    width: 80vw;
+}
+.iconMenu {
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+    color: #ffffff;
+}
+.iconMenu2 {
+    margin-top: 35px;
+    margin-left: 10px;
+    width: 25px;
+    height: 25px;
+}
+.textMenu {
+    width: 164px;
+    margin-top: 5px;
+    line-height: 16px;
+    height: 29px;
+    font-weight: 600;
+    color: #ffffff;
+}
+.boxIconMenu {
+    display: 'grid';
+    background-color: 'yellow';
+    height: '10px';
+}
+    

@@ -1,0 +1,339 @@
+/* font-family: 'Open Sans', sans-serif; */
+.fundoPreto {
+  position: fixed;
+  z-index: 999;
+  height: 2em;
+  width: 100%;
+  background-color: #14181B;
+}
+.center {
+  text-align: center;
+}
+.textTopCenter {
+  margin-top: 14em;
+}
+.backgroundStars {
+  background: linear-gradient(180deg, hsla(197, 18%, 20%, 0.702) 0%, hsla(208, 16%, 16%, 0.45) 100%),url("../../Assets/Stars.png");
+  height: 2253px;
+  background-size: inherit;
+}
+.square {
+  position: absolute;
+  right: 0;
+  width: 48px;
+  height: 48px;
+  -webkit-box-shadow: -9px 7px 16px 3px rgba(0,0,0,0.75);
+  -moz-box-shadow: -9px 7px 16px 3px rgba(0,0,0,0.75);
+  box-shadow: -1px 6px 13px -4px rgb(0 0 0 / 75%);
+}
+.header {
+  padding-top: 13%;
+  height: 32%;
+}
+.ellipse {
+  position: absolute;
+  top: 182%;
+  height: 650px;
+  width: 650px;
+}
+.middle-container {
+  position: absolute;
+  right: 0;
+  background-image: url("../../Assets/Vector.png");
+  background-repeat: no-repeat;
+  background-attachment: inherit;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  width: 933px;
+  height: 900px;
+  align-self: flex-end;
+}
+.middle-container-child1 {
+  position: absolute;
+  width: 400px;
+  height: 304px;
+  background-color: #FFFFFF;
+  right: 933px;
+}
+.middle-container-child2 {
+  width: 419px;
+  height: 300px;
+  background-color: #FFFFFF;
+  position: absolute;
+  top: 304px;
+  left: 0px;
+}
+.middle-container-child3 {
+  width: 412px;
+  height: 300px;
+  background-color: #FFFFFF;
+  position: absolute;
+  top: 604px;
+  right: 102px;
+}
+.boxConteudo {
+  padding-left: 45px;
+    padding-right: 29px;
+}
+.textToLeft {
+  text-align: left;
+}
+.textRight {
+  text-align: right;
+}
+.bottom {
+  margin-top: 6%;
+  margin-bottom: 6%;
+  width: 100%;
+  background-color: #FFFFFF;
+  display: grid;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.boxBottom1 {
+  height: 221px;
+  padding-left: 60%;
+  padding-right: 7%;
+}
+.boxBottom2 {
+  padding-left: 54%;
+  padding-right: 7%;
+}
+.boxBottom3 {
+  margin-bottom: 6%;
+  padding-left: 55%;
+  padding-right: 7%;
+}
+.boxMiddle1 {
+  position: absolute;
+  top: 1637px;
+  right: 103px;
+  width: 500px;
+  height: 96px;
+}
+.boxMiddle2 {
+  width: 500px;
+  height: 96px; 
+}
+.textTopCenter {
+  margin-top: 6em;
+}
+.menu {
+  position: fixed;
+  bottom: 0px;
+  height: 6em;
+  width: 100%;
+  background-color: #14181B;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menuButton {
+  background-color: #1c2125;
+  border-radius: 5px;
+  width: 3em;
+  height: 3em;
+  border: solid 0.02em #4d4c4c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menuButton1 {
+  width: 60%;
+  height: 61%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.menuInvisible {
+  height: 6em;
+  width: 100%;
+}
+.menuButtons {
+  height: 2em;
+  width: 2em;
+  color: rgb(255, 255, 255);
+}
+.boxPage {
+  position: absolute;
+  top: 1912px;
+  right: 99px;
+  width: 500px;
+}
+.boxdivPage {
+}
+/* Media */
+@media only screen and (max-width: 1300px) {
+  .header {
+    margin-top: 6em;
+    height: 470px;
+  }
+  .middle-container {
+    display: none;
+  }
+  .backgroundStars {
+    background: linear-gradient(180deg, hsla(208, 16%, 16%, 0.902) 0%, hsla(208, 16%, 16%, 0.45) 100%),url("../../Assets/Stars.png");
+    height: 88em;
+    background-size: contain;
+  }
+  .ellipse {
+    position: absolute;
+    top: 76em;
+    width: 18em;
+    height: 18em;
+  }
+  
+  .middle-container12 {
+    width: 100%;
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-position: cover;
+    display: grid;
+    flex-direction: column;
+    align-items: center center;
+  }
+  .boxConteudo2 {
+    display: flex;
+    flex-direction: column;
+    width: 33.3%;
+    background-color: #FFFFFF;
+    height: 20em;
+    align-self: center;
+  }
+  .square1 {
+    justify-content: center;
+    align-self: center;
+
+  }
+  .square2 {
+    position: absolute;
+    align-self: flex-end;
+    width: 1em;
+    height: 1em;
+    -webkit-box-shadow: -9px 7px 16px 3px rgba(0,0,0,0.75);
+    -moz-box-shadow: -9px 7px 16px 3px rgba(0,0,0,0.75);
+    box-shadow: -1px 6px 13px -4px rgb(0 0 0 / 75%);
+  }
+  .middle-container-child12 {
+    align-self: center;
+    width: 10em;
+    height: 8em;
+    background-color: #FFFFFF;
+    border-bottom: solid 100px #14181B;
+  }
+  .middle-container-child22 {
+    align-self: center;
+    width: 10em;
+    height: 8em;
+    background-color: #FFFFFF;
+  }
+  .box {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+  }
+  .boxdiv {
+    border-radius: 5px;
+    width: 300px;
+    height: 160px;
+    background-color: #FFFFFF;
+    padding: 10px;
+    margin: 10px;
+  }
+  .boxdiv2 {
+    width: 300px;
+    height: 160px;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .middle-container-child32 {
+    width: 10em;
+    height: 8em;
+    background-color: #FFFFFF;
+  }
+  .boxPage {
+    position: absolute;
+    top: 1063px;
+    right: 99px;
+    width: 255px;
+  }
+  
+  .boxMiddle1 {
+    margin-top: 5em;
+    top: 71em;
+    right: 7em;
+    width: 308px;
+  }
+  .boxMiddle2 {
+    margin-top: 5em;
+    top: 7.5em;
+    right: 7em;
+    width: 250px;  
+  }
+  .boxBottom1 {
+    display: none;
+  }
+  .boxBottom2 {
+    display: none;
+  }
+  .boxBottom3 {
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 10%;
+  }
+  .header {
+    display: none;
+  }
+  .boxdiv1 {
+    width: 300px;
+    height: 382px;
+  }
+  .bottom {
+    justify-content: center;
+    height: 25em;
+    margin-bottom: 240px;
+    margin-top: 61px;
+    display: block;
+  }
+  .menu {
+    position: fixed;
+    bottom: 0px;
+    height: 6em;
+    width: 100%;
+    background-color: #14181B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .menuButton {
+    background-color: #1c2125;
+    border-radius: 5px;
+    width: 3em;
+    height: 3em;
+    border: solid 0.02em #4d4c4c;
+  }
+  .menuButton1 {
+    width: 60%;
+    height: 61%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+}
+
+@media only screen and (min-width: 1300px) {
+  .middle-container12 {
+    display: none;
+  }
+  .box {
+    display: none;
+  }
+  .boxdiv {
+    display: none;
+  }
+}
+
