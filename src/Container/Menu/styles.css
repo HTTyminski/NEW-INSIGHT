@@ -41,6 +41,7 @@
 .fontRight {
     color: #7db8ff;
     font-weight: 600;
+    font-size: 17px;
 }
 .leftMenuTitle {
     font-size: 20px;
@@ -91,7 +92,6 @@
     margin-top: 5px;
     line-height: 16px;
     height: 29px;
-    font-weight: 600;
     color: #ffffff;
 }
 .boxIconMenu {
@@ -99,4 +99,25 @@
     background-color: 'yellow';
     height: '10px';
 }
-    
+.hidden {
+    display: none;
+}
+.background {
+    background-color: #034699;
+}
+@media only screen and (max-width: 1700px) {
+    .mobile {
+        display: flex;
+    }
+    .view {
+        display: none;
+    }
+}
+@media only screen and (min-width: 1701px) {
+    .mobile {
+        display: none;
+    }
+    .view {
+        display: flex;
+    }
+}   
