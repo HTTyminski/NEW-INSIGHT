@@ -105,11 +105,43 @@
 .background {
     background-color: #034699;
 }
-@media only screen and (max-width: 1700px) {
+.mapa {
+    font-weight: 600;
+    color: #ffffff;
+    margin-left: 20px;
+    font-size: 18px;
+    line-height: 10px
+}
+.exp {
+    color: #ffffff;
+    margin-left: 20px;
+    font-size: 18px;
+    line-height: 10px
+}
+.menuMenu {
+    position: fixed;
+    bottom: 0px;
+    height: 6em;
+    width: 100%;
+    background-color: #14181B;
+    display: flex;
+  }
+  .menuTop {
+    position: fixed;
+    top: 0px;
+    height: 6em;
+    width: 100%;
+    background-color: #14181B;
+    display: flex;
+  }
+@media only screen and (min-width: 1251px) and (max-width: 1700px) {
     .mobile {
         display: flex;
     }
     .view {
+        display: none;
+    }
+    .telefone1 {
         display: none;
     }
 }
@@ -120,4 +152,38 @@
     .view {
         display: flex;
     }
-}   
+    .telefone1 {
+        display: none;
+    }
+}  
+@media only screen and (max-width: 1250px) {
+	.containerMenu {
+        display: table;
+        width: 100vw;
+        background-color: #2144C0;
+    }
+    .mobile {
+        display: none;
+    }
+    .telefone {
+        display: none;
+    }
+    .rightBotMenu {
+        padding-left: 40px;
+        width: 148px;
+        height: 163px;
+    }
+    .mapa {
+        font-weight: 600;
+        color: #ffffff;
+        margin-left: 20px;
+        font-size: 10px;
+        line-height: 10px
+    }
+    .exp {
+        color: #ffffff;
+        margin-left: 20px;
+        font-size: 10px;
+        line-height: 10px
+    }
+}
