@@ -3,6 +3,9 @@ import { useNavigate } from 'react-router-dom';
 import './styles.css';
 import { MdFmdGood } from "react-icons/md";
 import { FcOk } from "react-icons/fc";
+import Back from '../../Assets/back.png';
+import QuebraCabeca from '../../Assets/quebracabeca.png';
+import Peca from '../../Assets/peca.png';
 
 const Insight2 = function () {
     const navigate = useNavigate();
@@ -60,51 +63,124 @@ const Insight2 = function () {
                 <p className='exp'>EXPLORAÇÃO INTERATIVA</p>
             </div>
         </div> */}
-        <div className='div1'>
-            <div className='boxTitulo'>
-                <p className='p17'>Pare o mundo que eu quero descer!</p>
-            </div>
-            <div className='boxSubTitulo'>
-                <p className='p18'>exercício de inspiração</p>
-            </div>
-        </div>
-        <div className='main'>
-            <div className='section'>
-                <p className='p19'>No filme “Sexta-feira Muito Louca”, uma comédia de 2003, a atriz 
-                    Jamie Lee-Curtis troca de corpo com sua filha adolescente e boa parte 
-                    das cenas cômicas acontecem pelo fato de uma não saber fazer o que a outra sabe
-                </p>
-            
-                <p className='p19'>Por exemplo, a mãe, quando está no corpo da filha, precisa tocar uma guitarra 
-                    em um show. Não existe nenhuma maneira de isso dar certo! A guitarra, no caso, é 
-                    algo complexo para alguém que nunca tocou o instrumento.
-                </p>
-            </div>
-        </div>
 
-        <div className='div2'>
-            <p className='p20'>Faz de conta...</p>
-           
-            <p className='p21'>Agora, imagine que, por conta de um feitiço antigo, você acaba de trocar de corpo 
-                com outra pessoa e essa pessoa é um neurocirurgião!</p>
-            <p className='p21'>E isso acontece bem na hora que ele está na sala de cirurgia. O que você faz?
-                Qual a sua reação quando percebe que está de avental branco segurando um bisturi
-                com um paciente desacordado na sua frente?</p>
-       
+
+
+        <div className='backgroundCor'>
+            <div className='div1'>
+                <div className='boxTitulo'>
+                    <p className='p17'>Pare o mundo que eu quero descer!</p>
+                </div>
+                <div className='boxSubTitulo'>
+                    <p className='p18'>exercício de inspiração</p>
+                </div>
+            </div>
+            <div className='main'>
+                <div className='section'>
+                    <p className='p19'>No filme “Sexta-feira Muito Louca”, uma comédia de 2003, a atriz 
+                        Jamie Lee-Curtis troca de corpo com sua filha adolescente e boa parte 
+                        das cenas cômicas acontecem pelo fato de uma não saber fazer o que a outra sabe
+                    </p>
                 
-        </div>
+                    <p className='p19'>Por exemplo, a mãe, quando está no corpo da filha, precisa tocar uma guitarra 
+                        em um show. Não existe nenhuma maneira de isso dar certo! A guitarra, no caso, é 
+                        algo complexo para alguém que nunca tocou o instrumento.
+                    </p>
+                </div>
+            </div>
 
-        <div className='boxSubTituloMiddle'>
-            <p className='p22'>1. Qual a primeira coisa que você pensa em fazer neste momento?</p>
+            <div className='div2'>
+                <p className='p20'>Faz de conta...</p>
+                <p className='p21'>Agora, imagine que, por conta de um feitiço antigo, você acaba de trocar de corpo 
+                    com outra pessoa e essa pessoa é um neurocirurgião!</p>
+                <p className='p21'>E isso acontece bem na hora que ele está na sala de cirurgia. O que você faz?
+                    Qual a sua reação quando percebe que está de avental branco segurando um bisturi
+                    com um paciente desacordado na sua frente?</p>
+            </div>
         </div>
-        <div><p>A</p></div>
-        <div><p>Gritar e sair correndo  =D</p></div>
-        <div><p>B</p></div>
-        <div><p>Olhar para todos e abrir o jogo de que você não é a melhor pessoa para fazer uma cirurgia.</p></div>
-        <div><p>C</p></div>
-        <div><p>Olhar para o lado, entregar o bisturi para outra pessoa e sair da sala.</p></div>
-        <div><p>D</p></div>
-        <div><p>Fazer a cirurgia, afinal, eu sou cirurgião!</p></div>     
+        <div style={{ background: `url(${Back})`}}>
+
+            <div className='boxSubTituloMiddle'>
+                <p className='p22'>1. Qual a primeira coisa que você pensa em fazer neste momento?</p>
+            </div>
+
+            <div className='container1'>
+                <div className='divContainer1'>
+                    <div className='divContainer2'>
+                        <div className='circulo'><p className='p23'>A</p></div>
+                        <p className='p24'>Gritar e sair correndo  =D</p>
+                    </div>
+                    <div className='divContainer3'>
+                        <p className='p25'>Você é racional e transparente, mesmo em um momento 
+                        tão doido, consegue falar naturalmente com as pessoas.</p>
+                    </div>
+                </div>
+
+                <div className='divContainer1'>
+                    <div className='divContainer2'>
+                        <div className='circulo'><p className='p23'>B</p></div>
+                        <p className='p24'>Olhar para todos e abrir o jogo de que você não é a melhor pessoa para fazer uma cirurgia.</p>
+                    </div>
+                    <div className='divContainer3'>
+                        <p className='p25'>Você é racional e transparente, mesmo em um momento 
+                        tão doido, consegue falar naturalmente com as pessoas.</p>
+                    </div>
+                </div>
+
+                <div className='divContainer1'>
+                    <div className='divContainer2'>
+                        <div className='circulo'><p className='p23'>C</p></div>
+                        <p className='p24'>Olhar para o lado, entregar o bisturi para outra pessoa e sair da sala.</p>
+                    </div>
+                    <div className='divContainer3'>
+                        <p className='p25'>Você é racional e transparente, mesmo em um momento 
+                        tão doido, consegue falar naturalmente com as pessoas.</p>
+                    </div>
+                </div>
+
+                <div className='divContainer1'>
+                    <div className='divContainer2'>
+                        <div className='circulo'><p className='p23'>D</p></div>
+                        <p className='p24'>Fazer a cirurgia, afinal, eu sou cirurgião!</p>
+                    </div>
+                    <div className='divContainer3'>
+                        <p className='p25'>Você é racional e transparente, mesmo em um momento 
+                        tão doido, consegue falar naturalmente com as pessoas.</p>
+                    </div>
+                </div>
+            </div>  
+
+            <div className='boxSubTituloMiddle2'>
+                <p className='p22'>2. Perceba seu corpo e sua mente.<br></br>
+                Quais seriam as sensações e pensamentos que estariam passando por você <br></br>neste momento?</p>
+            </div>
+
+            <div className='container1'>
+                <div className='divContainer1'>
+                    <div className='divContainer21'>
+                        <div className='circulo'><p className='p23'>A</p></div>
+                        <p className='p24'>Batimento cardíaco acelerado, respiração curta e mãos tremendo. Medo! Isso não é para mim!</p>
+                    </div>
+                    <div className='divContainer31'>
+                        <p className='p25'>Ter consciência das nossas limitações é importante diante das complexidades, só assim podemos buscar os recursos necessários para resolver o problema. Um problema complexo só pode ser resolvido por quem tem recursos para isso, no caso o cirurgião fez um curso de medicina.</p>
+                    </div>
+                </div>
+
+                <div className='divContainer1'>
+                    <div className='divContainer21'>
+                        <div className='circulo'><p className='p23'>B</p></div>
+                        <p className='p24'>Eu não faço a menor ideia do que é uma cirurgia, tirem me daqui!</p>
+                    </div>
+                    <div className='divContainer31'>
+                        <p className='p25'>Ter consciência das nossas limitações é importante diante das complexidades, só assim podemos buscar os recursos necessários para resolver o problema. Um problema complexo só pode ser resolvido por quem tem recursos para isso, no caso o cirurgião fez um curso de medicina.</p>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <div className='quebraCabeca' style={{ background: `url(${QuebraCabeca})`,backgroundRepeat: 'no-repeat',backgroundRepeat: 'round' }}>
+            <img src={Peca} alt="Peça quebra cabeça" style={{ width: '151px',height: '166px'}} />
+
+        </div>
 
 
 
