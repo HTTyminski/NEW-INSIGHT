@@ -4,12 +4,23 @@ import './styles.css';
 import Back from '../../Assets/back.png';
 import { BiRightArrowAlt } from "react-icons/bi";
 import Peca from '../../Assets/peca.png';
-import {Text,Button } from '@adobe/react-spectrum';
+import Card from '../../Components/cards';
+import CardMedio from '../../Components/cardsMedio';
+import SetaClick from '../../Assets/setaClick.png'
+//import {Text,Button } from '@adobe/react-spectrum';
 
 
 
-const Insight3 = function () {
+const Insight2 = function () {
     const navigate = useNavigate();
+
+    const [ toggleImage ,setToggleImage ] = useState(false);
+
+    const ToggleImage = () => {
+        toggleImage ? setToggleImage(false) : setToggleImage(true);
+    }
+
+   
 
     const [ isHovering1, setIsHovering1 ] = useState(false);
     const [ isHovering2, setIsHovering2 ] = useState(false);
@@ -57,158 +68,81 @@ const Insight3 = function () {
 
   return (
     <div className="flex-container">
-        {/* <div className='menuTop'>
-            <div style={{ marginTop:  '20px',display: 'flex' }}>
-                <MdFmdGood style={{ color: '#ffffff',width:'50px',height: '50px',marginLeft: '20px' }}/>
-                <p className='mapa'>MAPA DE EXPLORAÇÃO</p>
-                <p className='exp'>EXPLORAÇÃO INTERATIVA</p>
-            </div>
-        </div> */}
+        <div className='topInsight3'></div>
 
-
-
-        <div className='backgroundCor'>
-            <div className='div1'>
-                <div className='boxTitulo'>
-                    <p className='p17'>Pare o mundo que eu quero descer!</p>
-                </div>
-                <div className='boxSubTitulo'>
-                    <p className='p18'>exercício de inspiração</p>
-                </div>
-            </div>
-            <div className='main'>
-                <div className='section'>
-                    <p className='p19'>No filme “Sexta-feira Muito Louca”, uma comédia de 2003, a atriz 
-                        Jamie Lee-Curtis troca de corpo com sua filha adolescente e boa parte 
-                        das cenas cômicas acontecem pelo fato de uma não saber fazer o que a outra sabe
-                    </p>
-                
-                    <p className='p19'>Por exemplo, a mãe, quando está no corpo da filha, precisa tocar uma guitarra 
-                        em um show. Não existe nenhuma maneira de isso dar certo! A guitarra, no caso, é 
-                        algo complexo para alguém que nunca tocou o instrumento.
-                    </p>
-                </div>
-            </div>
-
-            <div className='div2'>
-                <p className='p20'>Faz de conta...</p>
-                <p className='p21'>Agora, imagine que, por conta de um feitiço antigo, você acaba de trocar de corpo 
-                    com outra pessoa e essa pessoa é um neurocirurgião!</p>
-                <p className='p21'>E isso acontece bem na hora que ele está na sala de cirurgia. O que você faz?
-                    Qual a sua reação quando percebe que está de avental branco segurando um bisturi
-                    com um paciente desacordado na sua frente?</p>
-            </div>
-        </div>
-        <div style={{ background: `url(${Back})`}}>
-
-            <div className='boxSubTituloMiddle'>
-                <p className='p22'>1. Qual a primeira coisa que você pensa em fazer neste momento?</p>
-            </div>
-
-            <div className='container1'>
-                <div className='divContainer1'>
-                    <div className='divContainer2'>
-                        <div className='circulo'><p className='p23'>A</p></div>
-                        <p className='p24'>Gritar e sair correndo  =D</p>
-                    </div>
-                    <div className='divContainer3'>
-                        <p className='p25'>Você é racional e transparente, mesmo em um momento 
-                        tão doido, consegue falar naturalmente com as pessoas.</p>
-                    </div>
-                </div>
-
-                <div className='divContainer1'>
-                    <div className='divContainer2'>
-                        <div className='circulo'><p className='p23'>B</p></div>
-                        <p className='p24'>Olhar para todos e abrir o jogo de que você não é a melhor pessoa para fazer uma cirurgia.</p>
-                    </div>
-                    <div className='divContainer3'>
-                        <p className='p25'>Você é racional e transparente, mesmo em um momento 
-                        tão doido, consegue falar naturalmente com as pessoas.</p>
-                    </div>
-                </div>
-
-                <div className='divContainer1'>
-                    <div className='divContainer2'>
-                        <div className='circulo'><p className='p23'>C</p></div>
-                        <p className='p24'>Olhar para o lado, entregar o bisturi para outra pessoa e sair da sala.</p>
-                    </div>
-                    <div className='divContainer3'>
-                        <p className='p25'>Você é racional e transparente, mesmo em um momento 
-                        tão doido, consegue falar naturalmente com as pessoas.</p>
-                    </div>
-                </div>
-
-                <div className='divContainer1'>
-                    <div className='divContainer2'>
-                        <div className='circulo'><p className='p23'>D</p></div>
-                        <p className='p24'>Fazer a cirurgia, afinal, eu sou cirurgião!</p>
-                    </div>
-                    <div className='divContainer3'>
-                        <p className='p25'>Você é racional e transparente, mesmo em um momento 
-                        tão doido, consegue falar naturalmente com as pessoas.</p>
-                    </div>
-                </div>
-            </div>  
-
-            <div className='boxSubTituloMiddle2'>
-                <p className='p22'>2. Perceba seu corpo e sua mente.<br></br>
-                Quais seriam as sensações e pensamentos que estariam passando por você <br></br>neste momento?</p>
-            </div>
-
-            <div className='container1'>
-                <div className='divContainer1'>
-                    <div className='divContainer21'>
-                        <div className='circulo'><p className='p23'>A</p></div>
-                        <p className='p24'>Batimento cardíaco acelerado, respiração curta e mãos tremendo. Medo! Isso não é para mim!</p>
-                    </div>
-                    <div className='divContainer31'>
-                        <p className='p25'>Ter consciência das nossas limitações é importante diante das complexidades, só assim podemos buscar os recursos necessários para resolver o problema. Um problema complexo só pode ser resolvido por quem tem recursos para isso, no caso o cirurgião fez um curso de medicina.</p>
-                    </div>
-                </div>
-
-                <div className='divContainer1'>
-                    <div className='divContainer21'>
-                        <div className='circulo'><p className='p23'>B</p></div>
-                        <p className='p24'>Eu não faço a menor ideia do que é uma cirurgia, tirem me daqui!</p>
-                    </div>
-                    <div className='divContainer31'>
-                        <p className='p25'>Ter consciência das nossas limitações é importante diante das complexidades, só assim podemos buscar os recursos necessários para resolver o problema. Um problema complexo só pode ser resolvido por quem tem recursos para isso, no caso o cirurgião fez um curso de medicina.</p>
-                    </div>
-                </div>
+         <div className='imageFundo1'>
+            <p className='p30'>Complexo ou Complicado</p>
+            <p className='p31'>pense  rápido</p>
+            <p className='p32'>Você tem<span className='p33'>15 segundos</span> para cada resposta.</p>
+            <p className='p34'>Selecione a alternativa correta sem pesquisar na internet ;)</p>
+            
+            <div className='divBtn' onClick={() => { navigate('/menu');}}>
+                <p className='btnTextStart'>Começar =)</p>
+                {/* <p className='btnText'>Já começou =D</p> */}
             </div> 
         </div>
-        <div className='quebraCabeca'>
-            <img src={Peca} alt="Peça quebra cabeça" className='peca'/> 
-            <p className='p26'>Agora, imagine que você entregou o bisturi para alguém ao lado e decidiu sair da sala e do hospital.</p>
-            <p className='p27'>Há uma cafeteria por perto, você entra e encontra uma criança pequena tentando montar um quebra cabeça em uma das mesas. </p>
-            <p className='p27'>A mãe dela está no balcão pegando o café. A criança se vira para você e pergunta: <span className='span27'>“Onde eu encaixo essa aqui?”</span> Você segura a peça e a encaixa no lugar certo.</p>
-            <p className='p27'>Responda: <span className='span27'>qual a diferença</span> entre a situação na sala de cirurgia e essa agora? Por qual motivo você paralisa na sala de cirurgia e consegue encaixar a peça do quebra-cabeças?</p>
-            <div className='fundoClick'>
-                <p className='p28'>Uma cirurgia pode não ser complexa para alguém que estudou para isso, mas para qualquer outra pessoa é. Você não saberia fazer o que um neurocirurgião faz, a não ser que tenha frequentado a escola de medicina ;)</p>
-                <p className='p29'>Se esse for o seu caso, se você for estudante de medicina se especializando em cirurgia, você irá achar uma cirurgia complicada, não complexa. Já para uma criança pequena, um quebra-cabeças pode ser complexo, mas um adulto pode achá-lo apenas complicado.</p>
-            </div>
-            <div className='divBtn'>
-                <p className='btnText'>Continuar</p>
-            </div>
+
+        <div className='div233'>
+            <p className='p20'>15</p>
+        </div>
+
+        <div className='imageFundo2'>
+            <p className='boxSubTituloQtd'>1. Qual é a quantidade média de leucócitos de uma pessoa saudável?</p>
+            <div className='divContainer5'>
+                <div className='divContainer6'>
+                    <div className='circulo'>
+                        <p className='p23'>A</p>
+                    </div>
+                    <p className='p24'>Entre <b>6 mil e 10 mil</b> por milímetro cúbico de sangue.</p>
+                </div>
+                <div className='divContainer7'>
+                    <div className='circulo'>
+                        <p className='p23'>A</p>
+                    </div>
+                    <p className='p24'>Entre <b>400 e 100</b> por milímetro cúbico de sangue.</p>
+                </div>
+                <div className='divContainer8'>
+                    <div className='circulo'>
+                        <p className='p23'>A</p>
+                    </div>
+                    <p className='p24'>Entre <b>20 mil e 30 mil</b> por milímetro cúbico de sangue.</p>
+                </div>
+            </div>  
+        </div>
+
+        <div className='div234'>
+            <p className='p20'>15</p>
+        </div>
+
+        <div className='divBlue'>
+            <p className='boxSubTituloQtd2'>1. Qual é a quantidade média de leucócitos de uma pessoa saudável?</p>
+            <div className='divContainer5'>
+                <div className='divContainer6'>
+                    <div className='circulo'>
+                        <p className='p23'>A</p>
+                    </div>
+                    <p className='p24'>Entre <b>6 mil e 10 mil</b> por milímetro cúbico de sangue.</p>
+                </div>
+                <div className='divContainer7'>
+                    <div className='circulo'>
+                        <p className='p23'>A</p>
+                    </div>
+                    <p className='p24'>Entre <b>400 e 100</b> por milímetro cúbico de sangue.</p>
+                </div>
+                <div className='divContainer8'>
+                    <div className='circulo'>
+                        <p className='p23'>A</p>
+                    </div>
+                    <p className='p24'>Entre <b>20 mil e 30 mil</b> por milímetro cúbico de sangue.</p>
+                </div>
+            </div>  
+            
         </div>
 
 
 
-      
-
-    
-
-      
-       
-        {/* <div className='menuMenu'>
-            <div style={{ marginTop:  '20px',display: 'flex' }}>
-                <MdFmdGood onClick={() => { navigate('/');}} style={{ color: '#ffffff',width:'50px',height: '50px',marginLeft: '20px' }}/>
-                <p style={{ fontWeight: '600', color: '#ffffff',marginLeft: '20px',fontSize:'12px',marginTop: '18px' }}>SAIR DESTE MÓDULO</p>
-            </div>
-        </div> */}
-  </div>
+    </div>
   );
 };
 
-export default Insight3; 
+export default Insight2;
