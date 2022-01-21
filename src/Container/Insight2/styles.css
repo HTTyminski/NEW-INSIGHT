@@ -120,12 +120,13 @@
   margin-right: auto;
 }
 .container1 {
+  height: 394px;
   flex-direction: row;
   display: flex;
-  grid-gap: 20px;
+  grid-gap: 40px;
   justify-content: center;
-  margin-bottom: 10vh;
 }
+
 .divContainer1 {
   display: grid;
   text-align: center;
@@ -137,11 +138,28 @@
   height: 197px;
   background-color: #6C77B7;
 }
+.divContainer1:hover {
+  transform: scale(1.1);
+  transition: transform 1s;
+}
+.divContainer2:hover {
+  background-color: #5863a1;
+}
+.setaClick:hover {
+  transform: scale(1.1);
+  transition: transform 1s;
+}
 .divContainer3 {
+  transition: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: 1s;
+  transition: transform 1s;
   width: 288px;
   height: 197px;
   background-color: #F7F5F5;
   border-radius: 0px 0px 16px 16px
+}
+.none {
+  display: none;
 }
 .p23 {
   font-family: Open Sans;
@@ -275,6 +293,17 @@
   background-color: #232A30;
   border-radius: 30px;
   margin-bottom: 86px;
+}
+.fundoClick2 {
+  margin: auto;
+  width: 648px;
+  height: 293px;
+  background-color: #232A30;
+  border-radius: 30px;
+  margin-bottom: 86px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .divBtn {
   margin: auto;

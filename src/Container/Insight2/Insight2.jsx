@@ -1,14 +1,26 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './styles.css';
-import { MdFmdGood } from "react-icons/md";
-import { FcOk } from "react-icons/fc";
 import Back from '../../Assets/back.png';
-import QuebraCabeca from '../../Assets/quebracabeca.png';
+import { BiRightArrowAlt } from "react-icons/bi";
 import Peca from '../../Assets/peca.png';
+import Card from '../../Components/cards';
+import CardMedio from '../../Components/cardsMedio';
+import SetaClick from '../../Assets/setaClick.png'
+//import {Text,Button } from '@adobe/react-spectrum';
+
+
 
 const Insight2 = function () {
     const navigate = useNavigate();
+
+    const [ toggleImage ,setToggleImage ] = useState(false);
+
+    const ToggleImage = () => {
+        toggleImage ? setToggleImage(false) : setToggleImage(true);
+    }
+
+   
 
     const [ isHovering1, setIsHovering1 ] = useState(false);
     const [ isHovering2, setIsHovering2 ] = useState(false);
@@ -98,56 +110,33 @@ const Insight2 = function () {
                     com um paciente desacordado na sua frente?</p>
             </div>
         </div>
-        <div style={{ background: `url(${Back})`}}>
+        <div style={{ background: `url(${Back})`,height: '139vh'}}>
 
             <div className='boxSubTituloMiddle'>
                 <p className='p22'>1. Qual a primeira coisa que você pensa em fazer neste momento?</p>
             </div>
 
             <div className='container1'>
-                <div className='divContainer1'>
-                    <div className='divContainer2'>
-                        <div className='circulo'><p className='p23'>A</p></div>
-                        <p className='p24'>Gritar e sair correndo  =D</p>
-                    </div>
-                    <div className='divContainer3'>
-                        <p className='p25'>Você é racional e transparente, mesmo em um momento 
-                        tão doido, consegue falar naturalmente com as pessoas.</p>
-                    </div>
-                </div>
-
-                <div className='divContainer1'>
-                    <div className='divContainer2'>
-                        <div className='circulo'><p className='p23'>B</p></div>
-                        <p className='p24'>Olhar para todos e abrir o jogo de que você não é a melhor pessoa para fazer uma cirurgia.</p>
-                    </div>
-                    <div className='divContainer3'>
-                        <p className='p25'>Você é racional e transparente, mesmo em um momento 
-                        tão doido, consegue falar naturalmente com as pessoas.</p>
-                    </div>
-                </div>
-
-                <div className='divContainer1'>
-                    <div className='divContainer2'>
-                        <div className='circulo'><p className='p23'>C</p></div>
-                        <p className='p24'>Olhar para o lado, entregar o bisturi para outra pessoa e sair da sala.</p>
-                    </div>
-                    <div className='divContainer3'>
-                        <p className='p25'>Você é racional e transparente, mesmo em um momento 
-                        tão doido, consegue falar naturalmente com as pessoas.</p>
-                    </div>
-                </div>
-
-                <div className='divContainer1'>
-                    <div className='divContainer2'>
-                        <div className='circulo'><p className='p23'>D</p></div>
-                        <p className='p24'>Fazer a cirurgia, afinal, eu sou cirurgião!</p>
-                    </div>
-                    <div className='divContainer3'>
-                        <p className='p25'>Você é racional e transparente, mesmo em um momento 
-                        tão doido, consegue falar naturalmente com as pessoas.</p>
-                    </div>
-                </div>
+                <Card  
+                    letra="A" 
+                    pergunta="Gritar e sair correndo  =D" 
+                    resposta="Você é racional e transparente, mesmo em um momento tão doido, consegue falar naturalmente com as pessoas."
+                />
+                <Card  
+                    letra="B" 
+                    pergunta="Olhar para todos e abrir o jogo de que você não é a melhor pessoa para fazer uma cirurgia." 
+                    resposta="Você é racional e transparente, mesmo em um momento tão doido, consegue falar naturalmente com as pessoas."
+                />
+                <Card  
+                    letra="C" 
+                    pergunta="Olhar para o lado, entregar o bisturi para outra pessoa e sair da sala." 
+                    resposta="Você é racional e transparente, mesmo em um momento tão doido, consegue falar naturalmente com as pessoas."
+                />
+                <Card  
+                    letra="D" 
+                    pergunta="Olhar para o lado, entregar o bisturi para outra pessoa e sair da sala." 
+                    resposta="Você é racional e transparente, mesmo em um momento tão doido, consegue falar naturalmente com as pessoas."
+                />
             </div>  
 
             <div className='boxSubTituloMiddle2'>
@@ -156,30 +145,39 @@ const Insight2 = function () {
             </div>
 
             <div className='container1'>
-                <div className='divContainer1'>
-                    <div className='divContainer21'>
-                        <div className='circulo'><p className='p23'>A</p></div>
-                        <p className='p24'>Batimento cardíaco acelerado, respiração curta e mãos tremendo. Medo! Isso não é para mim!</p>
-                    </div>
-                    <div className='divContainer31'>
-                        <p className='p25'>Ter consciência das nossas limitações é importante diante das complexidades, só assim podemos buscar os recursos necessários para resolver o problema. Um problema complexo só pode ser resolvido por quem tem recursos para isso, no caso o cirurgião fez um curso de medicina.</p>
-                    </div>
-                </div>
 
-                <div className='divContainer1'>
-                    <div className='divContainer21'>
-                        <div className='circulo'><p className='p23'>B</p></div>
-                        <p className='p24'>Eu não faço a menor ideia do que é uma cirurgia, tirem me daqui!</p>
-                    </div>
-                    <div className='divContainer31'>
-                        <p className='p25'>Ter consciência das nossas limitações é importante diante das complexidades, só assim podemos buscar os recursos necessários para resolver o problema. Um problema complexo só pode ser resolvido por quem tem recursos para isso, no caso o cirurgião fez um curso de medicina.</p>
-                    </div>
-                </div>
+                <CardMedio
+                    letra="A" 
+                    pergunta="Batimento cardíaco acelerado, respiração curta e mãos tremendo. Medo! Isso não é para mim!" 
+                    resposta="Ter consciência das nossas limitações é importante diante das complexidades, só assim podemos buscar os recursos necessários para resolver o problema. Um problema complexo só pode ser resolvido por quem tem recursos para isso, no caso o cirurgião fez um curso de medicina."
+                />
+                   <CardMedio
+                    letra="B" 
+                    pergunta="Eu não faço a menor ideia do que é uma cirurgia, tirem me daqui!" 
+                    resposta="Ter consciência das nossas limitações é importante diante das complexidades, só assim podemos buscar os recursos necessários para resolver o problema. Um problema complexo só pode ser resolvido por quem tem recursos para isso, no caso o cirurgião fez um curso de medicina."
+                />
+                
             </div> 
         </div>
-        <div className='quebraCabeca' style={{ background: `url(${QuebraCabeca})`,backgroundRepeat: 'no-repeat',backgroundRepeat: 'round' }}>
-            <img src={Peca} alt="Peça quebra cabeça" style={{ width: '151px',height: '166px'}} />
-
+        <div className='quebraCabeca'>
+            <img src={Peca} alt="Peça quebra cabeça" className='peca'/> 
+            <p className='p26'>Agora, imagine que você entregou o bisturi para alguém ao lado e decidiu sair da sala e do hospital.</p>
+            <p className='p27'>Há uma cafeteria por perto, você entra e encontra uma criança pequena tentando montar um quebra cabeça em uma das mesas. </p>
+            <p className='p27'>A mãe dela está no balcão pegando o café. A criança se vira para você e pergunta: <span className='span27'>“Onde eu encaixo essa aqui?”</span> Você segura a peça e a encaixa no lugar certo.</p>
+            <p className='p27'>Responda: <span className='span27'>qual a diferença</span> entre a situação na sala de cirurgia e essa agora? Por qual motivo você paralisa na sala de cirurgia e consegue encaixar a peça do quebra-cabeças?</p>
+            
+            <div className={toggleImage ? 'fundoClick' : 'fundoClick2'} onClick={ToggleImage}>
+                <div style={{ background: `url(${SetaClick})`,backgroundRepeat: 'no-repeat',width:'120px',height:'120px' }} className={toggleImage ? 'none' : 'setaClick'} />
+            
+                <div className={toggleImage ? '' : 'none'}>
+                    <p className='p28'>Uma cirurgia pode não ser complexa para alguém que estudou para isso, mas para qualquer outra pessoa é. Você não saberia fazer o que um neurocirurgião faz, a não ser que tenha frequentado a escola de medicina ;)</p>
+                    <p className='p29'>Se esse for o seu caso, se você for estudante de medicina se especializando em cirurgia, você irá achar uma cirurgia complicada, não complexa. Já para uma criança pequena, um quebra-cabeças pode ser complexo, mas um adulto pode achá-lo apenas complicado.</p>
+                </div>
+            </div>
+            
+            <div className='divBtn' onClick={() => { navigate('/menu');}}>
+                <p className='btnText'>Continuar</p>
+            </div>
         </div>
 
 
