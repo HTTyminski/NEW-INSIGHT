@@ -11,10 +11,10 @@ const App = function () {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Insight3 />} />
+        <Route path="/Insight3" element={<Insight3 />} />
         <Route path="/Insight2" element={<Insight2 />} />
         <Route path="/Home" element={<Home />} />
-        <Route path="/menu" element={<Menu />} />
+        <Route path="/" element={<Menu />} />
         <Route path="*" element={<ErrorPage />}/>
       </Routes>
     </Router>

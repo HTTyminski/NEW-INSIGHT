@@ -3,6 +3,11 @@ import { useNavigate } from 'react-router-dom';
 import './styles.css';
 import { MdFmdGood } from "react-icons/md";
 import { FcOk } from "react-icons/fc";
+import { BsXLg } from "react-icons/bs";
+import { BsBoxArrowLeft } from "react-icons/bs";
+
+
+
 
 
 const Menu = function () {
@@ -54,9 +59,9 @@ const Menu = function () {
 
   return (
     <div className="flex-container">
-        <div className='menuTop'>
-            <div style={{ marginTop:  '20px',display: 'flex' }}>
-                <MdFmdGood style={{ color: '#ffffff',width:'50px',height: '50px',marginLeft: '20px' }}/>
+        <div className='menuInsight'>
+            <div style={{ marginTop:'6px',display:'flex' }}>
+                <BsXLg className='iconTopMenu'/>
                 <p className='mapa'>MAPA DE EXPLORAÇÃO</p>
                 <p className='exp'>EXPLORAÇÃO INTERATIVA</p>
             </div>
@@ -65,13 +70,12 @@ const Menu = function () {
             onMouseEnter={() => setIsHovering1(true)} 
             onMouseLeave={() => setIsHovering1(false)}
             style={{ 
-                height: '15vh',
+                height: '176px',
                 borderBottom: '1px solid #02cbeb',
-                marginTop: '6em'
             }}>
             <div className={back1()}>
                 <div className='leftMenuCenter'>
-                    <div className={crossClass1()} style={{ height: '15vh' }}/>
+                    <div className={crossClass1()} style={{ height: '176px' }}/>
                     <p className='fontLeft'>I</p>
                     <p className='leftMenuTitle'>INSIGHT</p>
                 </div>
@@ -96,7 +100,7 @@ const Menu = function () {
                                 <MdFmdGood className='iconMenu'/>
                                 <FcOk className='iconMenu2'/>
                             </div>
-                            <p className='textMenu'>Narrativas dem Vídeo</p>
+                            <p className='textMenu'>Narrativas em Vídeo</p>
                         </div>
                     </div>
                     <div className='rightBotMenu'>
@@ -116,7 +120,7 @@ const Menu = function () {
             onMouseEnter={() => setIsHovering1(true)} 
             onMouseLeave={() => setIsHovering1(false)}
             style={{ 
-                height: '15vh',
+                height: '60px',
                 borderBottom: '1px solid #02cbeb' 
             }}>
             <div className={back1()}>
@@ -166,11 +170,11 @@ const Menu = function () {
         <div className='containerMenu telefone'
                 onMouseEnter={() => setIsHovering2(true)} 
                 onMouseLeave={() => setIsHovering2(false)}
-                style={{ height: '17vh',borderBottom: '1px solid #02cbeb' 
+                style={{ height: '176px',borderBottom: '1px solid #02cbeb' 
             }}>
             <div className={back2()}>
                 <div className='leftMenuCenter'>
-                    <div className={crossClass2()} style={{ height: '17vh' }}/>
+                    <div className={crossClass2()} style={{ height: '176px' }}/>
                     <p className='fontLeft'>M</p>
                     <p className='leftMenuTitle'>MOTIVATION</p>
                 </div>
@@ -204,7 +208,7 @@ const Menu = function () {
         <div className='containerMenu telefone1'
                 onMouseEnter={() => setIsHovering2(true)} 
                 onMouseLeave={() => setIsHovering2(false)}
-                style={{ height: '17vh',borderBottom: '1px solid #02cbeb' 
+                style={{ height: '60px',borderBottom: '1px solid #02cbeb' 
             }}>
             <div className={back2()}>
                 <div className='leftMenuCenter'>
@@ -253,11 +257,11 @@ const Menu = function () {
         <div className='containerMenu telefone'
                 onMouseEnter={() => setIsHovering3(true)} 
                 onMouseLeave={() => setIsHovering3(false)}
-                style={{ height: '18vh',borderBottom: '1px solid #02cbeb' 
+                style={{ height: '176px',borderBottom: '1px solid #02cbeb' 
             }}>
             <div className={back3()}>
                 <div className='leftMenuCenter'>
-                    <div className={crossClass3()} style={{ height: '18vh' }}/>
+                    <div className={crossClass3()} style={{ height: '176px' }}/>
                     <p className='fontLeft'>P</p>
                     <p className='leftMenuTitle'>PRACTICE</p>
                 </div>
@@ -828,11 +832,11 @@ const Menu = function () {
         <div className='containerMenu telefone'
             onMouseEnter={() => setIsHovering5(true)} 
             onMouseLeave={() => setIsHovering5(false)}
-            style={{ height: '22vh',borderBottom: '1px solid #02cbeb' }}
+            style={{ height: '206px',borderBottom: '1px solid #02cbeb' }}
         >
             <div className={back5()}>
                 <div className='leftMenuCenter'>
-                    <div className={crossClass5()} style={{ height: '22vh' }}/>
+                    <div className={crossClass5()} style={{ height: '206px' }}/>
                     <p className='fontLeft'>C</p>
                     <p className='leftMenuTitle'>CONNECT</p>
                 </div>
@@ -966,11 +970,11 @@ const Menu = function () {
         <div className='containerMenu telefone'
             onMouseEnter={() => setIsHovering6(true)} 
             onMouseLeave={() => setIsHovering6(false)}
-            style={{ height: '22vh',marginBottom: '6em' }}
+            style={{ height: '206px' }}
         >
             <div className={back6()}>
                 <div className='leftMenuCenter'>
-                    <div className={crossClass6()} style={{ height: '22vh' }}/>
+                    <div className={crossClass6()} style={{ height: '206px' }}/>
                     <p className='fontLeft'>T</p>
                     <p className='leftMenuTitle'>TRANSFER</p>
                 </div>
@@ -1032,7 +1036,7 @@ const Menu = function () {
         <div className='containerMenu telefone1'
             onMouseEnter={() => setIsHovering6(true)} 
             onMouseLeave={() => setIsHovering6(false)}
-            style={{ height: '22vh',marginBottom:'6em' }}
+            style={{ height: '22vh'}}
         >
             <div className={back6()}>
                 <div className='leftMenuCenter'>
@@ -1099,10 +1103,10 @@ const Menu = function () {
                 </div>
             </div>
         </div>
-        <div className='menuMenu'>
-            <div style={{ marginTop:  '20px',display: 'flex' }}>
-                <MdFmdGood onClick={() => { navigate('/');}} style={{ color: '#ffffff',width:'50px',height: '50px',marginLeft: '20px' }}/>
-                <p style={{ fontWeight: '600', color: '#ffffff',marginLeft: '20px',fontSize:'12px',marginTop: '18px' }}>SAIR DESTE MÓDULO</p>
+        <div className='menuInsight' onClick={() => { navigate('/menu');}}>
+            <div style={{ marginTop:'6px',display:'flex' }}>
+                <BsBoxArrowLeft className='iconTopMenu'/>
+                <p className='fontBotNavigate'>SAIR DESTE MÓDULO</p>
             </div>
         </div>
   </div>

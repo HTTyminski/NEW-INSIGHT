@@ -1,10 +1,18 @@
 .flex-container {
     display: grid;
 }
+.iconTopMenu {
+    margin-right: 10px;
+    color: rgb(255, 255, 255);
+    margin-top: 8px;
+    width: 22px;
+    height: 29px;
+    margin-left: 37px;
+}
 .topMenu {
     width: 100vw;
-    height: 10vh;
-    background-color: rgb(51, 50, 50);
+    height: 100px;
+    background-color: #323334;
 }
 .containerMenu {
     display: flex;
@@ -14,7 +22,7 @@
 .botMenu {
     width: 100vw;
     height: 10vh;
-    background-color: rgb(51, 50, 50);
+    background-color: #323334;
 }
 .leftMenu {
     display: grid;
@@ -121,18 +129,23 @@
 .menuMenu {
     position: fixed;
     bottom: 0px;
-    height: 6em;
+ 
     width: 100%;
     background-color: #14181B;
     display: flex;
   }
-  .menuTop {
-    position: fixed;
-    top: 0px;
-    height: 6em;
+  .menuInsight {
+    height: 60px;
     width: 100%;
     background-color: #14181B;
     display: flex;
+  }
+  .fontBotNavigate {
+    font-weight: 600;
+    color: #ffffff;
+    margin-left: '20px';
+    font-size: 12px;
+    margin-top: 14px;
   }
 @media only screen and (min-width: 1251px) and (max-width: 1700px) {
     .mobile {
@@ -168,22 +181,35 @@
     .telefone {
         display: none;
     }
+    .leftMenu {
+        height: 88px;
+        display: flex;
+        width: 100%;
+        background-color: #0062dc;
+        justify-content: center;
+        align-items: center;
+    }
     .rightBotMenu {
         padding-left: 40px;
         width: 148px;
         height: 163px;
     }
+    .menuInsight  {
+        height: 92px;
+    }
     .mapa {
         font-weight: 600;
         color: #ffffff;
         margin-left: 20px;
-        font-size: 10px;
-        line-height: 10px
+        font-size: 19px;
+        line-height: 19px;
+        width: 148px;
     }
     .exp {
         color: #ffffff;
         margin-left: 20px;
-        font-size: 10px;
-        line-height: 10px
+        font-size: 16px;
+        line-height: 22px;
+        width: 100px;
     }
 }
