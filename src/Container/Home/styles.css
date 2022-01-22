@@ -32,9 +32,9 @@
 }
 .ellipse {
   position: absolute;
-  top: 182%;
-  height: 650px;
-  width: 650px;
+  top: 166%;
+  height: 950px;
+  width: 950px;
 }
 .middle-container {
   position: absolute;
@@ -179,9 +179,9 @@
   }
   .ellipse {
     position: absolute;
-    top: 76em;
-    width: 18em;
-    height: 18em;
+    top: 63em;
+    width: 30em;
+    height: 30em;
   }
   
   .middle-container12 {
