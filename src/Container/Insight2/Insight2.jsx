@@ -120,12 +120,12 @@ const Insight2 = function () {
                 <Card  
                     letra="A" 
                     pergunta="Gritar e sair correndo  =D" 
-                    resposta="Você é racional e transparente, mesmo em um momento tão doido, consegue falar naturalmente com as pessoas."
+                    resposta="Reação normal para um problema maluco."
                 />
                 <Card  
                     letra="B" 
                     pergunta="Olhar para todos e abrir o jogo de que você não é a melhor pessoa para fazer uma cirurgia." 
-                    resposta="Você é racional e transparente, mesmo em um momento tão doido, consegue falar naturalmente com as pessoas."
+                    resposta="Sabia decisão, ponderada. Afinal fazer uma cirurgia não está entre as suas habilidades."
                 />
                 <Card  
                     letra="C" 
@@ -135,7 +135,7 @@ const Insight2 = function () {
                 <Card  
                     letra="D" 
                     pergunta="Olhar para o lado, entregar o bisturi para outra pessoa e sair da sala." 
-                    resposta="Você é racional e transparente, mesmo em um momento tão doido, consegue falar naturalmente com as pessoas."
+                    resposta="Você não para de nos surpreender!"
                 />
             </div>  
 
@@ -149,7 +149,7 @@ const Insight2 = function () {
                 <CardMedio
                     letra="A" 
                     pergunta="Batimento cardíaco acelerado, respiração curta e mãos tremendo. Medo! Isso não é para mim!" 
-                    resposta="Ter consciência das nossas limitações é importante diante das complexidades, só assim podemos buscar os recursos necessários para resolver o problema. Um problema complexo só pode ser resolvido por quem tem recursos para isso, no caso o cirurgião fez um curso de medicina."
+                    resposta="Sua reação é normal. Quando estamos diante de uma complexidade, quase sempre nos paralisamos. Isso porque sabemos que não temos os recursos para resolver problemas complexos quando não fazem parte do nosso repertório. Nesse caso, uma cirurgia para um leigo é algo supercomplexo."
                 />
                    <CardMedio
                     letra="B" 
