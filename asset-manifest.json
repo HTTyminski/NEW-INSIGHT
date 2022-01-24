@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/insight/static/css/main.1bfe63cb.css",
+    "main.js": "/insight/static/js/main.725f4ce9.js",
+    "static/js/787.4d3a1ca7.chunk.js": "/insight/static/js/787.4d3a1ca7.chunk.js",
+    "static/media/Stars.png": "/insight/static/media/Stars.22727a96299c7e25ccd0.png",
+    "static/media/quebracabeca.png": "/insight/static/media/quebracabeca.157ae5a717e48be41035.png",
+    "static/media/Vector.png": "/insight/static/media/Vector.2a3222bda7830f6b9e89.png",
+    "static/media/Ellipse.png": "/insight/static/media/Ellipse.6497aa7656c626f0bda7.png",
+    "static/media/imageFundo1.png": "/insight/static/media/imageFundo1.16084c80d2a1147d1eee.png",
+    "static/media/imageFundo3.png": "/insight/static/media/imageFundo3.e789a7dea91be2de28f1.png",
+    "static/media/imageFundo2.png": "/insight/static/media/imageFundo2.6742d5534faf727ba513.png",
+    "static/media/back.png": "/insight/static/media/back.189091d7204e0da67c44.png",
+    "static/media/peca.png": "/insight/static/media/peca.20b66bb051894878e217.png",
+    "index.html": "/insight/index.html",
+    "main.1bfe63cb.css.map": "/insight/static/css/main.1bfe63cb.css.map",
+    "main.725f4ce9.js.map": "/insight/static/js/main.725f4ce9.js.map",
+    "787.4d3a1ca7.chunk.js.map": "/insight/static/js/787.4d3a1ca7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1bfe63cb.css",
+    "static/js/main.725f4ce9.js"
+  ]
+}
