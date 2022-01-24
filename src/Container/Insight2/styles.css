@@ -134,11 +134,13 @@
   justify-items: center;
 }
 .divContainer2 {
+  cursor: pointer;
   width: 288px;
   height: 197px;
   background-color: #6C77B7;
 }
 .divContainer1:hover {
+  cursor: pointer;
   transform: scale(1.1);
   transition: transform 1s;
 }
@@ -287,6 +289,7 @@
     font-size: medium;
 }
 .fundoClick {
+  cursor: pointer;
   margin: auto;
   width: 648px;
   height: 293px;
@@ -295,6 +298,7 @@
   margin-bottom: 86px;
 }
 .fundoClick2 {
+  cursor: pointer;
   margin: auto;
   width: 648px;
   height: 293px;

@@ -13,8 +13,8 @@ const App = function () {
       <Routes>
         <Route path="/Insight3" element={<Insight3 />} />
         <Route path="/Insight2" element={<Insight2 />} />
-        <Route path="/Home" element={<Home />} />
-        <Route path="/" element={<Menu />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/menu" element={<Menu />} />
         <Route path="*" element={<ErrorPage />}/>
       </Routes>
     </Router>

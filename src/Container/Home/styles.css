@@ -32,9 +32,9 @@
 }
 .ellipse {
   position: absolute;
-  top: 166%;
-  height: 950px;
-  width: 950px;
+  top: 153%;
+  height: 1000px;
+  width: 1000px;
 }
 .middle-container {
   position: absolute;
@@ -130,6 +130,7 @@
   justify-content: center;
 }
 .menuButton {
+  cursor: pointer;
   background-color: #1c2125;
   border-radius: 5px;
   width: 3em;

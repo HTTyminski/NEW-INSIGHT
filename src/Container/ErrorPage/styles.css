@@ -30,11 +30,11 @@
   padding-top: 13%;
   height: 32%;
 }
-.ellipse {
+.ellipseError {
   position: absolute;
-  top: 182%;
-  height: 650px;
-  width: 650px;
+  top: 33%;
+  height: 1000px;
+  width: 1000px;
 }
 .middle-container {
   position: absolute;

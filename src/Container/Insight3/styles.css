@@ -180,6 +180,7 @@
   border-radius: 16px;
 }
 .divContainer5 {
+  cursor: pointer;
   margin-bottom: 193px;
   display: flex;
   grid-gap: 32px;
@@ -188,34 +189,40 @@
   justify-items: center;
 }
 .divContainer6 {
+  cursor: pointer;
   width: 392px;
   height: 167px;
   background: #701395;
   border-radius: 16px;
 }
 .divContainer6:hover {
+  cursor: pointer;
   transform: scale(1.1);
   transition: transform 1s;
   background-color: #B51BB1;
 }
 .divContainer7 {
+  cursor: pointer;
   width: 392px;
   height: 167px;
   background: #701395;
   border-radius: 16px;
 }
 .divContainer7:hover {
+  cursor: pointer;
   transform: scale(1.1);
   transition: transform 1s;
   background-color: #B51BB1;
 }
 .divContainer8 {
+  cursor: pointer;
   width: 392px;
   height: 167px;
   background: #701395;
   border-radius: 16px;
 }
 .divContainer8:hover {
+  cursor: pointer;
   transform: scale(1.1);
   transition: transform 1s;
   background-color: #B51BB1;
@@ -227,34 +234,40 @@
 }
 
 .divContainer9 {
+  cursor: pointer;
   width: 184px;
   height: 152px;
   background: #701395;
   border-radius: 16px;
 }
 .divContainer10 {
+  cursor: pointer;
   width: 184px;
   height: 152px;
   background: #701395;
   border-radius: 16px;
 }
 .divContainer11 {
+  cursor: pointer;
   width: 184px;
   height: 152px;
   background: #701395;
   border-radius: 16px;
 }
 .divContainer9:hover {
+  cursor: pointer;
   transform: scale(1.1);
   transition: transform 1s;
   background-color: #B51BB1;
 }
 .divContainer10:hover {
+  cursor: pointer;
   transform: scale(1.1);
   transition: transform 1s;
   background-color: #B51BB1;
 }
 .divContainer11:hover {
+  cursor: pointer;
   transform: scale(1.1);
   transition: transform 1s;
   background-color: #B51BB1;
@@ -568,6 +581,7 @@
   justify-content: center;
 }
 .divBtn {
+  cursor: pointer;
   margin: auto;
   width: 363px;
   text-align: center;
@@ -575,6 +589,9 @@
   border-radius: 40px;
   cursor: pointer;
   margin-bottom: 158px;
+}
+.divBtn2 {
+  cursor: pointer;
 }
 .btnText {
   padding-top: 5px;

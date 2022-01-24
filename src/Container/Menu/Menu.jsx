@@ -7,9 +7,6 @@ import { BsXLg } from "react-icons/bs";
 import { BsBoxArrowLeft } from "react-icons/bs";
 
 
-
-
-
 const Menu = function () {
     const navigate = useNavigate();
 
@@ -59,7 +56,7 @@ const Menu = function () {
 
   return (
     <div className="flex-container">
-        <div className='menuInsight'>
+        <div className='menuInsight' onClick={() => { navigate('/');}}>
             <div style={{ marginTop:'6px',display:'flex' }}>
                 <BsXLg className='iconTopMenu'/>
                 <p className='mapa'>MAPA DE EXPLORAÇÃO</p>
@@ -67,6 +64,7 @@ const Menu = function () {
             </div>
         </div>
         <div className='containerMenu telefone' 
+            onClick={() => { navigate('/Insight2');}}
             onMouseEnter={() => setIsHovering1(true)} 
             onMouseLeave={() => setIsHovering1(false)}
             style={{ 
@@ -168,6 +166,7 @@ const Menu = function () {
             </div>
         </div>
         <div className='containerMenu telefone'
+                onClick={() => { navigate('/Insight3');}}
                 onMouseEnter={() => setIsHovering2(true)} 
                 onMouseLeave={() => setIsHovering2(false)}
                 style={{ height: '176px',borderBottom: '1px solid #02cbeb' 
