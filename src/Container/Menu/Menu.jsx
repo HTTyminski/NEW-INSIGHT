@@ -6,7 +6,6 @@ import { FcOk } from "react-icons/fc";
 import { BsXLg } from "react-icons/bs";
 import { BsBoxArrowLeft } from "react-icons/bs";
 
-
 const Menu = function () {
     const navigate = useNavigate();
 

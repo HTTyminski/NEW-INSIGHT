@@ -126,11 +126,39 @@
   transform: translateX(-50%);
   top: 883px;
 }
+.div233Clicked {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 23px solid #F05E9C;
+  min-width: 180px;
+  min-height: 180px;
+  background: #191970;
+  border-radius: 190px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 883px;
+}
 .div234 {
   display: flex;
   align-items: center;
   justify-content: center;
   border: 23px solid #EEEEEE;
+  min-width: 180px;
+  min-height: 180px;
+  background: #191970;
+  border-radius: 190px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 1471px;
+}
+.div234Clicked {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 23px solid #F05E9C;
   min-width: 180px;
   min-height: 180px;
   background: #191970;
@@ -293,6 +321,27 @@
   color: #191970;
   width: 832px;
   padding-bottom: 113px;
+}
+.AiOutlineCheck {
+  margin-top: 17px;
+  margin-right: 30px;
+  color: #701395;
+  width: 49px;
+  height: 48px;
+}
+.AiOutlineCheck2 {
+  margin-top: 9px;
+  margin-right: 10px;
+  color: #701395;
+  width: 49px;
+  height: 38px;
+}
+.hidden {
+  display: none;
+}
+.boxResponse {
+  height: 63px;
+  display: flex;
 }
 
 
@@ -472,10 +521,17 @@
   width: 37px;
   height: 35px;
   background-color: #F7F5F5;
-  margin-left: auto;
+  margin-left: 180px;
   margin-right: auto;
 }
-
+.circulo2 {
+  border-radius: 30px;
+  width: 37px;
+  height: 35px;
+  background-color: #F7F5F5;
+  margin-left: 80px;
+  margin-right: auto;
+}
 .divContainer21 {
   width: 597px;
   height: 197px;
