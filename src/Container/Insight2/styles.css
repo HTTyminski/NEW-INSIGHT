@@ -216,6 +216,7 @@
 }
 .backgroundCor {
   background-color: #f7f7f5;
+  min-height: 831px;
 }
 .quebraCabeca {
   background-image: url(../../Assets/quebracabeca.png);
