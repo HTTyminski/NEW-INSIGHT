@@ -15,7 +15,7 @@ const App = function () {
         <Route path="/Insight2" element={<Insight2 />} />
         <Route path="/" element={<Home />} />
         <Route path="/menu" element={<Menu />} />
-        <Route path="*" element={<ErrorPage />}/>
+        {/* <Route path="*" element={<ErrorPage />}/> */}
       </Routes>
     </Router>
   );
