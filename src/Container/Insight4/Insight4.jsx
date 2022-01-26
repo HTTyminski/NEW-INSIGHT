@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './styles.css';
@@ -9,21 +10,13 @@ import CardMedio from '../../Components/cardsMedio';
 import SetaClick from '../../Assets/setaClick.png';
 import { makeStyles } from '@material-ui/core/styles';
 import { Grid } from '@material-ui/core';
-//import {Text,Button } from '@adobe/react-spectrum';
 
-const useStyles = makeStyles((theme) => ({
-    grid: {
-        width: '100%',
-        margin: '0px',
-        justifyContent: 'center',
-    }
-}));
+import './styles.css';
 
 
+const Insight4 = function () {
 
-const Insight2 = function () {
     const navigate = useNavigate();
-    const classes = useStyles();
 
     const [ toggleImage ,setToggleImage ] = useState(false);
 
@@ -31,18 +24,12 @@ const Insight2 = function () {
         toggleImage ? setToggleImage(false) : setToggleImage(true);
     }
 
-  return (
-    <div className="flex-container">
+    return (
+        <div className="flex-container">
+            <div className='backgroundColorIns4'>
+            <p className='p17'>Pare o mundo que eu quero descer!</p>
+            <p className='p18'>exercício de inspiração</p>
 
-        <div className='backgroundCor'>
-            <div className='div1'>
-                <div className='boxTitulo'>
-                    <p className='p17'>Pare o mundo que eu quero descer!</p>
-                </div>
-                <div className='boxSubTitulo'>
-                    <p className='p18'>exercício de inspiração</p>
-                </div>
-            </div>
             <div className='main'>
                 <div className='section'>
                     <p className='p19'>No filme “Sexta-feira Muito Louca”, uma comédia de 2003, a atriz 
@@ -50,13 +37,13 @@ const Insight2 = function () {
                         das cenas cômicas acontecem pelo fato de uma não saber fazer o que a outra sabe
                     </p>
                 
-                    <p className='p19'>Por exemplo, a mãe, quando está no corpo da filha, precisa tocar uma guitarra 
+                    <p className='p199'>Por exemplo, a mãe, quando está no corpo da filha, precisa tocar uma guitarra 
                         em um show. Não existe nenhuma maneira de isso dar certo! A guitarra, no caso, é 
                         algo complexo para alguém que nunca tocou o instrumento.
                     </p>
                 </div>
             </div>
-
+            </div>
             <div className='div2'>
                 <p className='p20'>Faz de conta...</p>
                 <p className='p21'>Agora, imagine que, por conta de um feitiço antigo, você acaba de trocar de corpo 
@@ -65,22 +52,14 @@ const Insight2 = function () {
                     Qual a sua reação quando percebe que está de avental branco segurando um bisturi
                     com um paciente desacordado na sua frente?</p>
             </div>
-        </div>
-        <div style={{ background: `url(${Back})`,height: '139vh'}}>
-
             <div className='boxSubTituloMiddle'>
                 <p className='p22'>1. Qual a primeira coisa que você pensa em fazer neste momento?</p>
             </div>
 
             <Grid
-                className='container1' 
-                container
-                direction="row"
-                justifyContent="center"
-                alignItems="center"
-                spacing={2} 
-                xs={2} 
-                sm={6} 
+                spacing={4} 
+                xs={12} 
+                sm={12} 
                 md={12}
             >
                 <Grid item>
@@ -113,22 +92,17 @@ const Insight2 = function () {
                 </Grid>
             </Grid>
 
-
             <div className='boxSubTituloMiddle2'>
                 <p className='p22'>2. Perceba seu corpo e sua mente.<br></br>
                 Quais seriam as sensações e pensamentos que estariam passando por você <br></br>neste momento?</p>
             </div>
 
+            <div className='marginBtGrid'>
             <Grid
-                className='container1' 
-                container
-                direction="row"
-                justifyContent="center"
-                alignItems="center"
-                spacing={2} 
-                xs={2} 
-                sm={6} 
-                md={12}
+                 spacing={4} 
+                 xs={12} 
+                 sm={12} 
+                 md={12}
             >
                 <Grid item>
                 <CardMedio
@@ -145,15 +119,9 @@ const Insight2 = function () {
                     />
                 </Grid>
             </Grid>
+            </div>
 
-            
-
-               
-                   
-                
-           
-        </div>
-        <div className='quebraCabeca'>
+            <div className='quebraCabeca'>
             <img src={Peca} alt="Peça quebra cabeça" className='peca'/> 
             <p className='p26'>Agora, imagine que você entregou o bisturi para alguém ao lado e decidiu sair da sala e do hospital.</p>
             <p className='p27'>Há uma cafeteria por perto, você entra e encontra uma criança pequena tentando montar um quebra cabeça em uma das mesas. </p>
@@ -173,8 +141,13 @@ const Insight2 = function () {
                 <p className='btnText'>Continuar</p>
             </div>
         </div>
-  </div>
-  );
+
+           
+            
+
+            
+        </div>
+    );
 };
 
-export default Insight2;
+export default Insight4;

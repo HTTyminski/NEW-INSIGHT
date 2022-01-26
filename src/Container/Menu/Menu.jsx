@@ -255,6 +255,7 @@ const Menu = function () {
             </div>
         </div>
         <div className='containerMenu telefone'
+                onClick={() => { navigate('/Insight4');}}
                 onMouseEnter={() => setIsHovering3(true)} 
                 onMouseLeave={() => setIsHovering3(false)}
                 style={{ height: '176px',borderBottom: '1px solid #02cbeb' 
@@ -302,6 +303,7 @@ const Menu = function () {
             </div>
         </div>
         <div className='containerMenu telefone1'
+                onClick={() => { navigate('/Insight4');}}
                 onMouseEnter={() => setIsHovering3(true)} 
                 onMouseLeave={() => setIsHovering3(false)}
                 style={{ height: '18vh',borderBottom: '1px solid #02cbeb' 

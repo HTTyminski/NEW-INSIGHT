@@ -190,7 +190,7 @@
   text-align: center;
   color: #FFFFFF;
 }
-.p35 {
+/* .p35 {
   font-family: Open Sans;
   font-style: italic;
   font-weight: 300;
@@ -206,7 +206,8 @@
   height: 167px;
   background: #701395;
   border-radius: 16px;
-}
+} */
+
 .divContainer5 {
   cursor: pointer;
   margin-bottom: 193px;
@@ -344,19 +345,7 @@
   display: flex;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-.div1 {
+/* .div1 {
   margin-top: 10vh;
   width: 100%;
   min-height: 30vh;
@@ -418,7 +407,7 @@
   font-size: 18px;
   line-height: 28px;
   color: #232A30;
-}
+} */
 
 
 .p20 {
@@ -430,7 +419,8 @@
   text-align: center;
   color: #F7F5F5;
 }
-.p21 {
+
+/* .p21 {
   font-family: Open Sans;
   font-style: normal;
   font-weight: 600;
@@ -472,7 +462,9 @@
 .setaClick:hover {
   transform: scale(1.1);
   transition: transform 1s;
-}
+} */
+
+
 .divContainer3 {
   transition: cubic-bezier(0.68, -0.55, 0.265, 1.55);
   transition: 1s;
@@ -537,15 +529,15 @@
   height: 197px;
   background-color: #6C77B7;
 }
-.divContainer31 {
+/* .divContainer31 {
   width: 597px;
   height: 197px;
   background-color: #F7F5F5;
   border-radius: 0px 0px 16px 16px
-}
-.backgroundCor {
+} */
+/* .backgroundCor {
   background-color: #f7f7f5;
-}
+} */
 .quebraCabeca {
   background-image: url(../../Assets/quebracabeca.png);
   background-repeat: no-repeat;
@@ -607,15 +599,14 @@
 }
 .p29 {
   margin: auto;
-    width: 568px;
-    font-family: Open Sans;
-  
-    font-weight: 400px;
-    font-size: 18px;
-    line-height: 25px;
-    color: #FFFFFF;
-    margin-bottom: 30px;
-    font-size: medium;
+  width: 568px;
+  font-family: Open Sans;
+  font-weight: 400px;
+  font-size: 18px;
+  line-height: 25px;
+  color: #FFFFFF;
+  margin-bottom: 30px;
+  font-size: medium;
 }
 .fundoClick {
   margin: auto;
@@ -678,7 +669,6 @@
   padding-left: 25px;
   padding-right: 25px;
 }
-
 .p35 {
   margin: auto;
   width: 870px;

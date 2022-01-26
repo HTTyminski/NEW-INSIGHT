@@ -10,7 +10,7 @@ export default function Card(props) {
     return (
         <div className='divContainer1'>
             <div className='divContainer2' onClick={ToggleSwith}>
-                <div className='circulo'>
+                <div className='circuloInsight2'>
                     <p className='p23'>{props.letra}</p>
                 </div>
                 <p className='p24'>{props.pergunta}</p>

@@ -6,6 +6,7 @@ import ErrorPage from './Container/ErrorPage/ErrorPage';
 import './App.css';
 import Insight2 from './Container/Insight2/Insight2';
 import Insight3 from './Container/Insight3/Insight3';
+import Insight4 from './Container/Insight4/Insight4';
 
 const App = function () {
   return (
@@ -13,10 +14,10 @@ const App = function () {
       <Routes>
         <Route path="/Insight3" element={<Insight3 />} />
         <Route path="/Insight2" element={<Insight2 />} />
+        <Route path="/Insight4" element={<Insight4 />} />
         <Route path="*" element={<Home />} />
         <Route path="/menu" element={<Menu />} />
         <Route path="/Home" element={<Home />} />
-        {/* <Route path="*" element={<ErrorPage />}/> */}
       </Routes>
     </Router>
   );
