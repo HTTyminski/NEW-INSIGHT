@@ -1,16 +1,13 @@
-
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './styles.css';
 import Back from '../../Assets/back.png';
-import { BiRightArrowAlt } from "react-icons/bi";
 import Peca from '../../Assets/peca.png';
 import Card from '../../Components/cards';
 import CardMedio from '../../Components/cardsMedio';
 import SetaClick from '../../Assets/setaClick.png';
-import { makeStyles } from '@material-ui/core/styles';
 import { Grid } from '@material-ui/core';
-
+import Fundo from '../../Assets/Fundo.png';
 import './styles.css';
 
 
@@ -26,13 +23,14 @@ const Insight4 = function () {
 
     return (
         <div className="flex-container">
+            <img className="bisturi" src={Fundo} alt="Bisturi" />
             <div className='backgroundColorIns4'>
             <p className='p17'>Pare o mundo que eu quero descer!</p>
             <p className='p18'>exercício de inspiração</p>
 
             <div className='main'>
-                <div className='section'>
-                    <p className='p19'>No filme “Sexta-feira Muito Louca”, uma comédia de 2003, a atriz 
+                <div className='sectionFilmes'>
+                    <p className='p19Filme'>No filme “Sexta-feira Muito Louca”, uma comédia de 2003, a atriz 
                         Jamie Lee-Curtis troca de corpo com sua filha adolescente e boa parte 
                         das cenas cômicas acontecem pelo fato de uma não saber fazer o que a outra sabe
                     </p>
@@ -52,38 +50,36 @@ const Insight4 = function () {
                     Qual a sua reação quando percebe que está de avental branco segurando um bisturi
                     com um paciente desacordado na sua frente?</p>
             </div>
-            <div className='boxSubTituloMiddle'>
+
+            <div style={{ background: `url(${Back})`}}>
+
+            <div className='boxSubTituloMiddle1'>
                 <p className='p22'>1. Qual a primeira coisa que você pensa em fazer neste momento?</p>
             </div>
 
-            <Grid
-                spacing={4} 
-                xs={12} 
-                sm={12} 
-                md={12}
-            >
-                <Grid item>
+            <Grid container>
+                <Grid item  xs={12} sm={6} md={3}>                  
                     <Card  
                         letra="A" 
                         pergunta="Gritar e sair correndo  =D" 
                         resposta="Reação normal para um problema maluco."
                     />
                 </Grid>
-                <Grid item>
+                <Grid item  xs={12} sm={6} md={3}>       
                     <Card  
                         letra="B" 
                         pergunta="Olhar para todos e abrir o jogo de que você não é a melhor pessoa para fazer uma cirurgia." 
                         resposta="Sabia decisão, ponderada. Afinal fazer uma cirurgia não está entre as suas habilidades."
                     />
                 </Grid>
-                <Grid item>
+                <Grid item  xs={12} sm={6} md={3}>      
                     <Card  
                         letra="C" 
                         pergunta="Olhar para o lado, entregar o bisturi para outra pessoa e sair da sala." 
                         resposta="Você é racional e transparente, mesmo em um momento tão doido, consegue falar naturalmente com as pessoas."
                     />
                 </Grid>
-                <Grid item>
+                <Grid item  xs={12} sm={6} md={3}>     
                     <Card  
                         letra="D" 
                         pergunta="Olhar para o lado, entregar o bisturi para outra pessoa e sair da sala." 
@@ -98,27 +94,38 @@ const Insight4 = function () {
             </div>
 
             <div className='marginBtGrid'>
-            <Grid
-                 spacing={4} 
-                 xs={12} 
-                 sm={12} 
-                 md={12}
-            >
-                <Grid item>
-                <CardMedio
-                    letra="A" 
-                    pergunta="Batimento cardíaco acelerado, respiração curta e mãos tremendo. Medo! Isso não é para mim!" 
-                    resposta="Sua reação é normal. Quando estamos diante de uma complexidade, quase sempre nos paralisamos. Isso porque sabemos que não temos os recursos para resolver problemas complexos quando não fazem parte do nosso repertório. Nesse caso, uma cirurgia para um leigo é algo supercomplexo."
-                />
+
+            <Grid container>
+                <Grid item  xs={12} sm={12} md={6}> 
+                    <CardMedio
+                        letra="A" 
+                        pergunta="Batimento cardíaco acelerado, respiração curta e mãos tremendo. Medo! Isso não é para mim!" 
+                        resposta="Sua reação é normal. Quando estamos diante de uma complexidade, quase sempre nos paralisamos. Isso porque sabemos que não temos os recursos para resolver problemas complexos quando não fazem parte do nosso repertório. Nesse caso, uma cirurgia para um leigo é algo supercomplexo."
+                    />
                 </Grid>
-                <Grid item>
-                <CardMedio
+                <Grid item  xs={12} sm={12} md={6}> 
+                    <CardMedio
                         letra="B" 
                         pergunta="Eu não faço a menor ideia do que é uma cirurgia, tirem me daqui!" 
                         resposta="Ter consciência das nossas limitações é importante diante das complexidades, só assim podemos buscar os recursos necessários para resolver o problema. Um problema complexo só pode ser resolvido por quem tem recursos para isso, no caso o cirurgião fez um curso de medicina."
                     />
                 </Grid>
             </Grid>
+            </div>
+
+            <div className='marginBtGrid2'>
+                <CardMedio
+                    letra="A" 
+                    pergunta="Batimento cardíaco acelerado, respiração curta e mãos tremendo. Medo! Isso não é para mim!" 
+                    resposta="Sua reação é normal. Quando estamos diante de uma complexidade, quase sempre nos paralisamos. Isso porque sabemos que não temos os recursos para resolver problemas complexos quando não fazem parte do nosso repertório. Nesse caso, uma cirurgia para um leigo é algo supercomplexo."
+                />
+                <CardMedio
+                    letra="B" 
+                    pergunta="Eu não faço a menor ideia do que é uma cirurgia, tirem me daqui!" 
+                    resposta="Ter consciência das nossas limitações é importante diante das complexidades, só assim podemos buscar os recursos necessários para resolver o problema. Um problema complexo só pode ser resolvido por quem tem recursos para isso, no caso o cirurgião fez um curso de medicina."
+                />
+            </div>
+
             </div>
 
             <div className='quebraCabeca'>

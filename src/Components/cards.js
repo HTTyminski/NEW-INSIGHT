@@ -8,12 +8,12 @@ export default function Card(props) {
         console.log(toggle);
     }
     return (
-        <div className='divContainer1'>
-            <div className='divContainer2' onClick={ToggleSwith}>
-                <div className='circuloInsight2'>
-                    <p className='p23'>{props.letra}</p>
+        <div className='divContainer1' onClick={ToggleSwith}>
+            <div className={toggle ? 'divContainerFundo' : 'divContainer2'}>
+                <div className='circulo'>
+                    <p className={toggle ? 'p23Circulo' : 'p23'}>{props.letra}</p>
                 </div>
-                <p className='p24'>{props.pergunta}</p>
+                <p className={toggle ? 'p24Active' : 'p24'}>{props.pergunta}</p>
             </div>
             <div className={toggle ? 'divContainer3' : 'none'}>
                 <p className='p25'>{props.resposta}</p>

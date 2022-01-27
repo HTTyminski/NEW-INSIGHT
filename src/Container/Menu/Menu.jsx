@@ -114,7 +114,7 @@ const Menu = function () {
         </div>
         {/* mobile */}
         <div className='containerMenu telefone1' 
-            onClick={() => { navigate('/Insight2');}}
+            onClick={() => { navigate('/Insight4');}}
             onMouseEnter={() => setIsHovering1(true)} 
             onMouseLeave={() => setIsHovering1(false)}
             style={{ 
