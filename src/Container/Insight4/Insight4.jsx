@@ -9,6 +9,8 @@ import SetaClick from '../../Assets/setaClick.png';
 import { Grid } from '@material-ui/core';
 import Fundo from '../../Assets/Fundo.png';
 import './styles.css';
+import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
+import { MdFmdGood } from "react-icons/md";
 
 
 const Insight4 = function () {
@@ -148,6 +150,19 @@ const Insight4 = function () {
                 <p className='btnText'>Continuar</p>
             </div>
         </div>
+        <div className="menu">
+        <div className='menuButton1'>
+            <div className='menuButton'>
+              <FiChevronLeft className='menuButtons' onClick={() => navigate('/Home')} />
+            </div>
+            <div className='menuButton'>
+              <MdFmdGood className='menuButtons' onClick={() => { navigate('/menu');}} />
+            </div>
+            <div className='menuButton'>
+              <FiChevronRight className='menuButtons'  onClick={() => navigate('/Complexo')}/>
+            </div>
+        </div>
+      </div>
 
            
             

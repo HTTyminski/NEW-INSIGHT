@@ -9,6 +9,11 @@
   background-repeat: no-repeat;
   background-size: cover;
   max-height: 586PX;
+  margin: auto;
+  width: 100%;
+}
+.gridAuto {
+  margin: auto;
 }
 .imageFundo3 {
   background-image: url(../../Assets/imageFundo3.png);
@@ -676,6 +681,22 @@
   line-height: 42px;
   text-align: center;
   color: #232A30;
+}
+
+@media only screen and (max-width: 420px) {
+  
+
+}
+@media only screen and (max-width: 1470px){
+  
+}
+@media only screen and (min-width: 1220px){
+ 
+}
+@media only screen and (min-width: 420px) and (max-width: 1220px){
+
+
+  
 }
 
 

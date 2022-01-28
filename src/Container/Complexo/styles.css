@@ -1,0 +1,281 @@
+.imageFundoComplexo {
+    background-image: url(../../Assets/imageFundo1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1185px;
+}
+.contador {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 23px solid #EEEEEE;
+    min-width: 180px;
+    min-height: 180px;
+    background: #191970;
+    border-radius: 190px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 1071px;
+}
+.contadorClicked {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 23px solid #F05E9C;
+    min-width: 180px;
+    min-height: 180px;
+    background: #191970;
+    border-radius: 190px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 1071px;
+  }
+.divContainerResp {
+    margin: auto;
+    cursor: pointer;
+    width: 330px;
+    height: 167px;
+    background: #701395;
+    border-radius: 16px;
+}
+.boxConteudoResp{
+    padding: 1px;
+    height: 63px;
+}
+.divBtnStart {
+    margin: auto;
+    width: 324px;
+    text-align: center;
+    background-color: #FF4500;
+    border-radius: 40px;
+    cursor: pointer;
+    margin-bottom: 158px;
+}
+.boxResp1 {
+    margin: auto;
+    cursor: pointer;
+    width: 184px;
+    height: 152px;
+    background: #701395;
+    border-radius: 16px;
+}
+.boxResp2 {
+    margin: auto;
+    cursor: pointer;
+    width: 184px;
+    height: 152px;
+    background: #701395;
+    border-radius: 16px;
+}
+.boxResp3 {
+    margin: auto;
+    cursor: pointer;
+    width: 184px;
+    height: 152px;
+    background: #701395;
+    border-radius: 16px;
+}
+.divContainerResp:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform 1s;
+    background-color: #B51BB1;
+}
+.boxResp1:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform 1s;
+    background-color: #B51BB1;
+}
+.boxResp2:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform 1s;
+    background-color: #B51BB1;
+}
+.boxResp3:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform 1s;
+    background-color: #B51BB1;
+}
+.divContainerBlue {
+    width: 100%;
+    height: 900px;
+    background: #191970;
+}
+.imageFundoMiddleComp {
+    background-image: url(../../Assets/imageFundo2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1015px;
+    margin: auto;
+    width: 100%;
+}
+.imageFundoMiddleCompContador {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 23px solid #EEEEEE;
+    min-width: 180px;
+    min-height: 180px;
+    background: #191970;
+    border-radius: 190px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 2085px;
+}
+.textBotComplexo {
+    padding-top: 100px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 42px;
+    text-align: center;
+    color: #B51BB1;
+}
+.textBotComplexo2 {
+    padding-top: 20px;
+    font-weight: 1;
+    font-size: 28px;
+    text-align: center;
+    color: #191970;
+    text-align: center;
+    padding-bottom: 113px;
+}
+.middleCompContador {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 23px solid #F05E9C;
+    min-width: 180px;
+    min-height: 180px;
+    background: #191970;
+    border-radius: 190px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 2085px;
+  }
+  .MuiGrid-spacing-xs-1 {
+    width: calc(100% + 0px) !important;
+    margin: -4px;
+}
+.divBtn2 {
+    cursor: pointer;
+    /* margin-bottom: 120px; */
+    padding-bottom: 177px;
+}
+.imageFundoComp3 {
+    background-image: url(../../Assets/imageFundo3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 908px;
+}
+.imageFundoMiddleComp {
+    background-image: url(../../Assets/imageFundo2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1007px;
+    margin: auto;
+    width: 100%;
+}
+.hidden {
+    display: none;
+}
+/* .imageFundoMiddleComp {
+    display: none;
+}
+.imageFundoMiddleCompContador {
+    display: none;
+}
+.divContainerBlue {
+    display: none;
+}
+.imageFundoComp3 {
+    display: none;
+}
+.contador {
+    display: none;
+} */
+@media only screen and (min-width: 960px) {
+    .imageFundoMiddleComp {
+        height: 491px;
+    }
+    .imageFundoMiddleCompContador {
+        top: 1250px;
+    }
+    .imageFundoComplexo {
+        background-image: url(../../Assets/imageFundo1.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 873px;
+    }
+    .contador {
+        top: 742px;
+    }
+    .boxSubTituloQtd {
+        margin-top: 106px;
+    }
+}
+
+
+@media only screen and (min-width: 600px) and (max-width: 960px) {
+    .gridNone {
+        display: none;
+    }
+  
+
+}
+@media only screen and (max-width: 1470px){
+  
+}
+@media only screen and (min-width: 1330px){
+    .divContainerResp {
+        margin: auto;
+        cursor: pointer;
+        width: 438px;
+        height: 167px;
+        background: #701395;
+        border-radius: 16px;
+    }
+}
+@media only screen and (min-width: 600px) {
+    .divContainerBlue {
+  
+        width: 100%;
+        height: 470px;
+        background: #191970;
+    }
+
+  
+}
+@media only screen and (min-width: 810px) {
+    .textBotComplexo {
+        margin: auto;
+        width: 808px;
+    }
+    .textBotComplexo2 {
+        margin: auto;
+        width: 808px;
+    }
+    .imageFundoComp3 {
+        height: 687px;
+    }
+    .p32 {
+        margin-top: 30px;
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 26px;
+        line-height: 0px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+  
+}

@@ -1,8 +1,6 @@
-import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { useNavigate, Link } from 'react-router-dom';
 import './styles.css';
-import { BsPatchCheck } from "react-icons/bs";
-import { BsPatchExclamation } from "react-icons/bs";
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 import { MdFmdGood } from "react-icons/md";
 import { Grid } from '@material-ui/core';
@@ -18,19 +16,28 @@ const Insight2 = function (props) {
     const [isClicked2, setIsClicked2] = useState(false);
     const [isOk1, setIsOk1] = useState(false);
     const [isOk2, setIsOk2] = useState(false);
+    const [isVisible, setIsVisible ] = useState(false);
+    const [isVisible2, setIsVisible2 ] = useState(false);
+    const [isStoped, setIsStoped ] = useState(false);
 
     function AiOutlineCheck1() {
         return `AiOutlineCheck ${isOk1 ? "AiOutlineCheck" : "hidden"}`;
     }
-    function AiOutlineCheck2() {
-        return `AiOutlineCheck2 ${isOk2 ? "hidden":"AiOutlineCheck2" }`;
-    }
     function classCounter() {
-        return `div233 ${isClicked ? "div233Clicked" : "div233"}`;
+        return `contador ${isClicked ? "contadorClicked" : "contador"}`;
     }
     function classCounter2() {
-        return `div234 ${isClicked2 ? "div234Clicked" : "div234"}`;
+        return `imageFundoMiddleCompContador ${isClicked2 ? "middleCompContador" : "imageFundoMiddleCompContador"}`;
     }
+   
+    const scrollToTop = () => {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+
+
+
+
+
 
     const startTimer = () => {
         setCustomInterval(
@@ -38,8 +45,9 @@ const Insight2 = function (props) {
                 changeTime()
             }, 1000)
         )
+        setIsVisible(true);
         setChangeElement(true)
-        setIsClicked(true);
+        setIsClicked(true); 
     }
     const startTimerTwo = () => {
         setCustomIntervalTwo(
@@ -47,9 +55,11 @@ const Insight2 = function (props) {
                 changeTimeTwo()
             }, 1000)
         )
+        setIsVisible2(true);
         setIsOk1(true);
         setIsClicked(false);
         setIsClicked2(true);
+   
     }
     const stopTimer = () => {
         if (customInterval) {
@@ -60,6 +70,8 @@ const Insight2 = function (props) {
         if (customInterval) {
             clearInterval(customIntervalTwo);
         }
+        setIsStoped(true);
+     
     }
     const clear = () => {
         stopTimer();
@@ -86,16 +98,14 @@ const Insight2 = function (props) {
 
     return (
         <div className="flex-container">
-            
-            <div className='topInsight3'></div>
-
-            <div className='imageFundo1'>
+        
+            <div className='imageFundoComplexo'>
                 <p className='p30'>Complexo ou Complicado</p>
                 <p className='p31'>pense  rápido</p>
                 <p className='p32'>Você tem<span className='p33'> 15 segundos</span> para cada resposta.</p>
-                <p className='p34'>Selecione a alternativa correta sem pesquisar na internet ;)</p>
+                <p className='p32'>Selecione a alternativa correta sem pesquisar na internet ;)</p>
 
-                <div className='divBtn' onClick={startTimer}>
+                <div className='divBtnStart' onClick={startTimer} >
                     {!changeElement
                         ? <p className='btnTextStart'>Começar =)</p>
                         : <p className='btnTextStarted'>Já começou =D</p>
@@ -103,114 +113,110 @@ const Insight2 = function (props) {
                 </div>
             </div>
 
-            <div className={classCounter()}>
+
+
+            <div className={isVisible ? classCounter(): 'hidden'}>
                 <p className='p20'>{seconds}</p>
             </div>
 
-            <div className='imageFundo2'>
+            <div className={isVisible ? 'imageFundoMiddleComp': 'hidden'}>
                 <p className='boxSubTituloQtd'>1. Qual é a quantidade média de leucócitos de uma pessoa saudável?</p>
-                
-                    
+    
+            
 
-                <Grid container className='gridAuto'>
-                    <Grid item  xs={12} sm={6} md={4}>                  
-                        <div className='divContainer6'
-                            onClick={() => {
-                                stopTimer();
-                                startTimerTwo();
-                                AiOutlineCheck1();
-                            }}>
-                            <div className='boxResponse'>
-                                <p className='p23 circulo'>A</p>
-                                <BsPatchCheck className={AiOutlineCheck1()} />
-                            </div>
-                            <p className='p24' >Entre <b>6 mil e 10 mil</b> por milímetro cúbico de sangue.</p>
+            <Grid container spacing={1} id="bot">
+                <Grid item  xs={12} sm={6} md={4}>                  
+                    <div className='divContainerResp'
+                        onClick={() => {
+                            stopTimer();
+                            startTimerTwo();
+                            AiOutlineCheck1();
+                        }}>
+                        <div className='boxConteudoResp'>
+                            <p className='p23 circulo'>A</p>
+                          
                         </div>
-                    </Grid>
-                    <Grid item  xs={12} sm={6} md={4}>       
-                        <div className='divContainer7' 
-                            onClick={() => {
-                                stopTimer();
-                                startTimerTwo();
-                            }}>
-                            <div className='boxResponse'>
-                                <p className='p23 circulo'>A</p>
-                                <BsPatchExclamation className={AiOutlineCheck1()} />
-                            </div>
-                            <p className='p24'>Entre <b>400 e 100</b> por milímetro cúbico de sangue.</p>
-                        </div>
-                    </Grid>
-                    <Grid item  xs={12} sm={6} md={4}>      
-                        <div className='divContainer8' 
-                            onClick={() => { 
-                                stopTimer(); 
-                                startTimerTwo(); 
-                            }}>
-                            <div className='boxResponse'>
-                                <p className='p23 circulo'>A</p>
-                                <BsPatchExclamation className={AiOutlineCheck1()} />
-                            </div>
-                            <p className='p24'>Entre <b>20 mil e 30 mil</b> por milímetro cúbico de sangue.</p>
-                        </div>
-                    </Grid>
-                
+                        <p className='p24' >Entre <b>6 mil e 10 mil</b> por milímetro cúbico de sangue.</p>
+                    </div>
                 </Grid>
-
-
-
-
-
-
-                
-
-                  
-
-                  
-
-
-
-
-
+                <Grid item  xs={12} sm={6} md={4}>       
+                    <div className='divContainerResp' 
+                        onClick={() => {
+                            stopTimer();
+                            startTimerTwo();
+                        }}>
+                        <div className='boxConteudoResp'>
+                            <p className='p23 circulo'>A</p>
+                          
+                        </div>
+                        <p className='p24'>Entre <b>400 e 100</b> por milímetro cúbico de sangue.</p>
+                    </div>
+                </Grid>
+                <Grid item  xs={12} sm={6} md={4}>      
+                    <div className='divContainerResp' 
+                        onClick={() => { 
+                            stopTimer(); 
+                            startTimerTwo(); 
+                        }}>
+                        <div className='boxConteudoResp'>
+                            <p className='p23 circulo'>A</p>
+                        
+                        </div>
+                        <p className='p24'>Entre <b>20 mil e 30 mil</b> por milímetro cúbico de sangue.</p>
+                    </div>
+                </Grid>
+            </Grid>
 
             </div>
 
-            <div className={classCounter2()}>
+            <div className={isVisible2 ? classCounter2() : 'hidden'}>
                 <p className='p20'>{secondsTwo}</p>
             </div>
 
-            <div className='divBlue'>
+            <div className={isVisible2 ? 'divContainerBlue': 'hidden'}>
                 <p className='boxSubTituloQtd2'>2. Qual é o resultado de 100 vezes 5.</p>
-                <div className='divContainer5'>
-                    <div className='divContainer9' onClick={stopTimerTwo}>
+
+            <Grid container spacing={2}>
+                <Grid item  xs={0} sm={0} md={3} className='gridNone'></Grid>
+                <Grid item  xs={12} sm={4} md={2}>                  
+                    <div className='boxResp1' onClick={stopTimerTwo}>
                         <div className='boxResponse'>
                             <p className='p23 circulo2'>A</p>
-                            <BsPatchExclamation className={AiOutlineCheck2()} />
+                           
                         </div>
                         <p className='p38'>50</p>
                     </div>
-                    <div className='divContainer10' onClick={stopTimerTwo}>
+                </Grid>
+                <Grid item  xs={12} sm={4} md={2}>       
+                    <div className='boxResp2' onClick={stopTimerTwo}>
                         <div className='boxResponse'>
                             <p className='p23 circulo2'>B</p>
-                            <BsPatchExclamation className={AiOutlineCheck2()} />
+                            
                         </div>
                         <p className='p38'>15</p>
                     </div>
-                    <div className='divContainer11' onClick={stopTimerTwo}>
+                </Grid>
+                <Grid item  xs={12} sm={4} md={2}>      
+                    <div className='boxResp3' onClick={stopTimerTwo}>
                         <div className='boxResponse'>
                             <p className='p23 circulo2'>B</p>
-                            <BsPatchCheck className={AiOutlineCheck2()} />
+                            
                         </div>
                         <p className='p38'>500</p>
                     </div>
-                </div>
+                </Grid>
+                <Grid item  xs={0} sm={0} md={3} className='gridNone'></Grid>
+            </Grid>
             </div>
-            <div className='imageFundo3'>
-                <p className='p39'>Percebeu como uma pergunta complexa deixa a gente desconcertado?</p>
-                <p className='p40'>Algumas perguntas só um especialista pode responder. Mortais comuns como eu e você, podemos chutar ou utilizar um recurso, nesse caso, o Google serve!</p>
+
+            <div className={isStoped ? 'imageFundoComp3': 'hidden'}>
+                <p className='textBotComplexo'>Percebeu como uma pergunta complexa deixa a gente desconcertado?</p>
+                <p className='textBotComplexo2'>Algumas perguntas só um especialista pode responder. Mortais comuns como eu e você, podemos chutar ou utilizar um recurso, nesse caso, o Google serve!</p>
                 <div className='divBtn2' onClick={() => { navigate('/menu'); }}>
                     <p className='btnTextMotivation'>Motivation</p>
                 </div>
             </div>
+
             <div className="menu">
                 <div className='menuButton1'>
                     <div className='menuButton'>
@@ -224,6 +230,12 @@ const Insight2 = function (props) {
                     </div>
                 </div>
             </div>
+       
+
+
+
+
+
         </div>
     );
 };

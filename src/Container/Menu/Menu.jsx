@@ -6,6 +6,25 @@ import { FcOk } from "react-icons/fc";
 import { BsXLg } from "react-icons/bs";
 import { BsBoxArrowLeft } from "react-icons/bs";
 
+import chat from '../../Assets/chat.png';
+import chatGrupo from '../../Assets/chatGrupo.png';
+import chatMobile from '../../Assets/chatMobile.png';
+import chave from '../../Assets/chave.png';
+import close from '../../Assets/close.png';
+import entrar from '../../Assets/entrar.png';
+import escada from '../../Assets/escada.png';
+import exit from '../../Assets/exit.png';
+import ferramenta from '../../Assets/ferramenta.png';
+import interrogacao from '../../Assets/interrogacao.png';
+import labirinto from '../../Assets/labirinto.png';
+import layout from '../../Assets/layout.png';
+import microfone from '../../Assets/microfone.png';
+import nuvem from '../../Assets/nuvem.png';
+import papel from '../../Assets/papel.png';
+import perfil from '../../Assets/perfil.png';
+
+
+
 const Menu = function () {
     const navigate = useNavigate();
 
@@ -20,57 +39,57 @@ const Menu = function () {
         return `borderLeft ${isHovering1 ? "":"hidden"}`;
     }
     function back1() {
-        return `leftMenu ${isHovering1 ? "background":""}`;
+        return `leftMenu ${isHovering1 ? "backgroundLeftMenu":""}`;
     }
     function crossClass2() {
         return `borderLeft ${isHovering2 ? "":"hidden"}`;
     }
     function back2() {
-        return `leftMenu ${isHovering2 ? "background":""}`;
+        return `leftMenu ${isHovering2 ? "backgroundLeftMenu":""}`;
     }
     function crossClass3() {
         return `borderLeft ${isHovering3 ? "":"hidden"}`;
     }
     function back3() {
-        return `leftMenu ${isHovering3 ? "background":""}`;
+        return `leftMenu ${isHovering3 ? "backgroundLeftMenu":""}`;
     }
     function crossClass4() {
         return `borderLeft ${isHovering4 ? "":"hidden"}`;
     }
     function back4() {
-        return `leftMenu ${isHovering4 ? "background":""}`;
+        return `leftMenu ${isHovering4 ? "backgroundLeftMenu":""}`;
     }
     function crossClass5() {
         return `borderLeft ${isHovering5 ? "":"hidden"}`;
     }
     function back5() {
-        return `leftMenu ${isHovering5 ? "background":""}`;
+        return `leftMenu ${isHovering5 ? "backgroundLeftMenu":""}`;
     }
     function crossClass6() {
         return `borderLeft ${isHovering6 ? "":"hidden"}`;
     }
     function back6() {
-        return `leftMenu ${isHovering6 ? "background":""}`;
+        return `leftMenu ${isHovering6 ? "backgroundLeftMenu":""}`;
     }
 
   return (
     <div className="flex-container">
         <div className='menuInsight' onClick={() => { navigate('/');}}>
             <div style={{ marginTop:'6px',display:'flex' }}>
-                <BsXLg className='iconTopMenu'/>
+                <img className="iconTopMenu" src={close} alt="Mundo globo" />
                 <p className='mapa'>MAPA DE EXPLORAÇÃO</p>
                 <p className='exp'>EXPLORAÇÃO INTERATIVA</p>
             </div>
         </div>
         <div className='containerMenu telefone' 
-            onClick={() => { navigate('/Insight2');}}
+          
             onMouseEnter={() => setIsHovering1(true)} 
             onMouseLeave={() => setIsHovering1(false)}
             style={{ 
                 height: '176px',
-                borderBottom: '1px solid #02cbeb',
+                borderBottom: '1px solid #3D87D9',
             }}>
-            <div className={back1()}>
+            <div className={back1()} onClick={() => { navigate('/Insight4');}}>
                 <div className='leftMenuCenter'>
                     <div className={crossClass1()} style={{ height: '176px' }}/>
                     <p className='fontLeft'>I</p>
@@ -85,7 +104,7 @@ const Menu = function () {
                     <div className='rightBotMenu'>
                         <div className='boxIconMenu'>
                             <div style={{ display: 'flex' }}>
-                                <MdFmdGood className='iconMenu'/>
+                                <img className="iconMenu" src={layout} alt="icone layout" />
                                 <FcOk className='iconMenu2'/>
                             </div>
                             <p className='textMenu'>Introdução ao tema</p>
@@ -94,7 +113,7 @@ const Menu = function () {
                     <div className='rightBotMenu'>
                         <div className='boxIconMenu'>
                             <div style={{ display: 'flex' }}>
-                                <MdFmdGood className='iconMenu'/>
+                                <img className="iconMenu3" src={interrogacao} alt="ponto de interrogacao" />
                                 <FcOk className='iconMenu2'/>
                             </div>
                             <p className='textMenu'>Narrativas em Vídeo</p>
@@ -103,7 +122,7 @@ const Menu = function () {
                     <div className='rightBotMenu'>
                         <div className='boxIconMenu'>
                             <div style={{ display: 'flex' }}>
-                                <MdFmdGood className='iconMenu'/>
+                                <img className="iconMenu" src={nuvem} alt="nuvem" />
                                 <FcOk className='iconMenu2'/>
                             </div>
                             <p className='textMenu'>Atividade de Reflexão</p>
@@ -119,7 +138,7 @@ const Menu = function () {
             onMouseLeave={() => setIsHovering1(false)}
             style={{ 
                 height: '60px',
-                borderBottom: '1px solid #02cbeb' 
+                borderBottom: '1px solid #3D87D9' 
             }}>
             <div className={back1()}>
                 <div className='leftMenuCenter'>
@@ -136,7 +155,7 @@ const Menu = function () {
                     <div className='rightBotMenu'>
                         <div className='boxIconMenu'>
                             <div style={{ display: 'flex' }}>
-                                <MdFmdGood className='iconMenu'/>
+                                <img className="iconMenu" src={layout} alt="icone layout" />
                                 <FcOk className='iconMenu2'/>
                             </div>
                             <p className='textMenu'>Introdução ao tema</p>
@@ -145,7 +164,7 @@ const Menu = function () {
                     <div className='rightBotMenu'>
                         <div className='boxIconMenu'>
                             <div style={{ display: 'flex' }}>
-                                <MdFmdGood className='iconMenu'/>
+                                <img className="iconMenu3" src={interrogacao} alt="ponto de interrogacao" />
                                 <FcOk className='iconMenu2'/>
                             </div>
                             <p className='textMenu'>Narrativas dem Vídeo</p>
@@ -156,7 +175,7 @@ const Menu = function () {
                     <div className='rightBotMenu'>
                         <div className='boxIconMenu'>
                             <div style={{ display: 'flex' }}>
-                                <MdFmdGood className='iconMenu'/>
+                                <img className="iconMenu" src={nuvem} alt="nuvem" />
                                 <FcOk className='iconMenu2'/>
                             </div>
                             <p className='textMenu'>Atividade de Reflexão</p>
@@ -169,7 +188,7 @@ const Menu = function () {
                 onClick={() => { navigate('/Insight3');}}
                 onMouseEnter={() => setIsHovering2(true)} 
                 onMouseLeave={() => setIsHovering2(false)}
-                style={{ height: '176px',borderBottom: '1px solid #02cbeb' 
+                style={{ height: '176px',borderBottom: '1px solid #3D87D9' 
             }}>
             <div className={back2()}>
                 <div className='leftMenuCenter'>
@@ -186,7 +205,7 @@ const Menu = function () {
                     <div className='rightBotMenu'>
                         <div className='boxIconMenu'>
                             <div style={{ display: 'flex' }}>
-                                <MdFmdGood className='iconMenu'/>
+                                <img className="iconMenu" src={entrar} alt="entrar" />
                                 <FcOk className='iconMenu2'/>
                             </div>
                             <p className='textMenu'>Vídeo: Escolha entre 3 portas</p>
@@ -195,10 +214,21 @@ const Menu = function () {
                     <div className='rightBotMenu'>
                         <div className='boxIconMenu'>
                             <div style={{ display: 'flex' }}>
-                                <MdFmdGood className='iconMenu'/>
+                                <img className="iconMenu" src={perfil} alt="perfil" />  
                                 <FcOk className='iconMenu2'/>
                             </div>
                             <p className='textMenu'>Entrevista com Edgard Gouveia Jr</p>
+                        </div>
+                    </div>
+                    <div className='rightBotMenu'>
+                        <div className='boxIconMenu'>
+                            <div className='boxIconMenu'>
+                                <div style={{ display: 'flex' }}>
+                                    <img className="iconMenu" src={nuvem} alt="nuvem" />
+                                    <FcOk className='iconMenu2'/>
+                                </div>
+                                <p className='textMenu'>Atividade de Reflexão</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -208,7 +238,7 @@ const Menu = function () {
                 onClick={() => { navigate('/Insight3');}}
                 onMouseEnter={() => setIsHovering2(true)} 
                 onMouseLeave={() => setIsHovering2(false)}
-                style={{ height: '60px',borderBottom: '1px solid #02cbeb' 
+                style={{ height: '60px',borderBottom: '1px solid #3D87D9' 
             }}>
             <div className={back2()}>
                 <div className='leftMenuCenter'>
@@ -225,7 +255,7 @@ const Menu = function () {
                     <div className='rightBotMenu'>
                         <div className='boxIconMenu'>
                             <div style={{ display: 'flex' }}>
-                                <MdFmdGood className='iconMenu'/>
+                                <img className="iconMenu" src={entrar} alt="entrar" />
                                 <FcOk className='iconMenu2'/>
                             </div>
                             <p className='textMenu'>Vídeo: Escolha entre 3 portas</p>
@@ -234,7 +264,7 @@ const Menu = function () {
                     <div className='rightBotMenu'>
                         <div className='boxIconMenu'>
                             <div style={{ display: 'flex' }}>
-                                <MdFmdGood className='iconMenu'/>
+                            <img className="iconMenu" src={perfil} alt="perfil" />
                                 <FcOk className='iconMenu2'/>
                             </div>
                             <p className='textMenu'>Entrevista com Edgard Gouveia Jr</p>
@@ -245,7 +275,7 @@ const Menu = function () {
                     <div className='rightBotMenu'>
                         <div className='boxIconMenu'>
                             <div style={{ display: 'flex' }}>
-                                <MdFmdGood className='iconMenu'/>
+                            <img className="iconMenu" src={nuvem} alt="nuvem" />
                                 <FcOk className='iconMenu2'/>
                             </div>
                             <p className='textMenu'>Atividade de Reflexão</p>
@@ -258,7 +288,7 @@ const Menu = function () {
                 onClick={() => { navigate('/Insight4');}}
                 onMouseEnter={() => setIsHovering3(true)} 
                 onMouseLeave={() => setIsHovering3(false)}
-                style={{ height: '176px',borderBottom: '1px solid #02cbeb' 
+                style={{ height: '176px',borderBottom: '1px solid #3D87D9' 
             }}>
             <div className={back3()}>
                 <div className='leftMenuCenter'>
@@ -275,7 +305,7 @@ const Menu = function () {
                     <div className='rightBotMenu'>
                         <div className='boxIconMenu'>
                             <div style={{ display: 'flex' }}>
-                                <MdFmdGood className='iconMenu'/>
+                                <img className="iconMenu" src={layout} alt="layout" />
                                 <FcOk className='iconMenu2'/>
                             </div>
                             <p className='textMenu'>Introdução à atividade</p>
@@ -284,7 +314,7 @@ const Menu = function () {
                     <div className='rightBotMenu'>
                         <div className='boxIconMenu'>
                             <div style={{ display: 'flex' }}>
-                                <MdFmdGood className='iconMenu'/>
+                                <img className="iconMenu" src={chatGrupo} alt="chatGrupo" />
                                 <FcOk className='iconMenu2'/>
                             </div>
                             <p className='textMenu'>Construção de hístoria em quadrinhos em duplas</p>
@@ -293,7 +323,7 @@ const Menu = function () {
                     <div className='rightBotMenu'>
                         <div className='boxIconMenu'>
                             <div style={{ display: 'flex' }}>
-                                <MdFmdGood className='iconMenu'/>
+                                <img className="iconMenu" src={nuvem} alt="nuvem" />
                                 <FcOk className='iconMenu2'/>
                             </div>
                             <p className='textMenu'>Atividade de Reflexão</p>
@@ -306,7 +336,7 @@ const Menu = function () {
                 onClick={() => { navigate('/Insight4');}}
                 onMouseEnter={() => setIsHovering3(true)} 
                 onMouseLeave={() => setIsHovering3(false)}
-                style={{ height: '18vh',borderBottom: '1px solid #02cbeb' 
+                style={{ height: '18vh',borderBottom: '1px solid #3D87D9' 
             }}>
             <div className={back3()}>
                 <div className='leftMenuCenter'>
@@ -323,7 +353,7 @@ const Menu = function () {
                     <div className='rightBotMenu'>
                         <div className='boxIconMenu'>
                             <div style={{ display: 'flex' }}>
-                                <MdFmdGood className='iconMenu'/>
+                                <img className="iconMenu" src={layout} alt="layout" />
                                 <FcOk className='iconMenu2'/>
                             </div>
                             <p className='textMenu'>Introdução à atividade</p>
@@ -332,7 +362,7 @@ const Menu = function () {
                     <div className='rightBotMenu'>
                         <div className='boxIconMenu'>
                             <div style={{ display: 'flex' }}>
-                                <MdFmdGood className='iconMenu'/>
+                                <img className="iconMenu" src={perfil} alt="perfil" />
                                 <FcOk className='iconMenu2'/>
                             </div>
                             <p className='textMenu'>Construção de hístoria em quadrinhos em duplas</p>
@@ -345,7 +375,7 @@ const Menu = function () {
                     <div className='rightBotMenu'>
                         <div className='boxIconMenu'>
                             <div style={{ display: 'flex' }}>
-                                <MdFmdGood className='iconMenu'/>
+                                <img className="iconMenu" src={nuvem} alt="nuvem" />
                                 <FcOk className='iconMenu2'/>
                             </div>
                             <p className='textMenu'>Atividade de Reflexão</p>
@@ -357,7 +387,7 @@ const Menu = function () {
         <div className='containerMenu view telefone'
                 onMouseEnter={() => setIsHovering4(true)} 
                 onMouseLeave={() => setIsHovering4(false)}
-                style={{ height: '40vh',borderBottom: '1px solid #02cbeb' }}
+                style={{ height: '40vh',borderBottom: '1px solid #3D87D9' }}
             >
             <div className={back4()}>
                 <div className='leftMenuCenter'>
@@ -376,7 +406,7 @@ const Menu = function () {
                         <div className='rightBotMenu'>
                             <div className='boxIconMenu'>
                                 <div style={{ display: 'flex' }}>
-                                    <MdFmdGood className='iconMenu'/>
+                                <img className="iconMenu4" src={microfone} alt="microfone" />    
                                     <FcOk className='iconMenu2'/>
                                 </div>
                                 <p className='textMenu'>PODCAST: Introdução conceitual</p>
@@ -385,7 +415,7 @@ const Menu = function () {
                         <div className='rightBotMenu'>
                             <div className='boxIconMenu'>
                                 <div style={{ display: 'flex' }}>
-                                    <MdFmdGood className='iconMenu'/>
+                                <img className="iconMenu5" src={chave} alt="chave" /> 
                                     <FcOk className='iconMenu2'/>
                                 </div>
                                 <p className='textMenu'>Escolha uma chave para continuar</p>
@@ -394,7 +424,7 @@ const Menu = function () {
                         <div className='rightBotMenu'>
                             <div className='boxIconMenu'>
                                 <div style={{ display: 'flex' }}>
-                                    <MdFmdGood className='iconMenu'/>
+                                <img className="iconMenu" src={layout} alt="layout" /> 
                                     <FcOk className='iconMenu2'/>
                                 </div>
                                 <p className='textMenu'>Introdução ao tema</p>
@@ -403,16 +433,16 @@ const Menu = function () {
                         <div className='rightBotMenu'>
                             <div className='boxIconMenu'>
                                 <div style={{ display: 'flex' }}>
-                                    <MdFmdGood className='iconMenu'/>
+                                <img className="iconMenu" src={chatMobile} alt="chatMobile" /> 
                                     <FcOk className='iconMenu2'/>
                                 </div>
                                 <p className='textMenu'>Vídeo: bate-papo entre criador de narrativas de games RPG e publicitário</p>
                             </div>
                         </div>
                         <div className='rightBotMenu'>
-                            <div className='boxIconMenu'>
+                            <div className='boxIconMenu'> 
                                 <div style={{ display: 'flex' }}>
-                                    <MdFmdGood className='iconMenu'/>
+                                <img className="iconMenu" src={chat} alt="chat" /> 
                                     <FcOk className='iconMenu2'/>
                                 </div>
                                 <p className='textMenu'>Vídeo Depoimento: pesonagem do mundo corporativo</p>
@@ -421,7 +451,7 @@ const Menu = function () {
                         <div className='rightBotMenu'>
                             <div className='boxIconMenu'>
                                 <div style={{ display: 'flex' }}>
-                                    <MdFmdGood className='iconMenu'/>
+                                <img className="iconMenu4" src={microfone} alt="microfone" /> 
                                     <FcOk className='iconMenu2'/>
                                 </div>
                                 <p className='textMenu'>PODCAST: Helena Crescia - como fazer um vom storytelling</p>
@@ -430,7 +460,7 @@ const Menu = function () {
                         <div className='rightBotMenu'>
                             <div className='boxIconMenu'>
                                 <div style={{ display: 'flex' }}>
-                                    <MdFmdGood className='iconMenu'/>
+                                <img className="iconMenu" src={labirinto} alt="labirinto" /> 
                                     <FcOk className='iconMenu2'/>
                                 </div>
                                 <p className='textMenu'>Infográfico com passo a passo para construção de narrativas</p>
@@ -447,7 +477,7 @@ const Menu = function () {
                     <div className='rightBotMenu'>
                         <div className='boxIconMenu'>
                             <div style={{ display: 'flex' }}>
-                                <MdFmdGood className='iconMenu'/>
+                            <img className="iconMenu" src={layout} alt="layout" /> 
                                 <FcOk className='iconMenu2'/>
                             </div>
                             <p className='textMenu'>Introdução ao tema</p>
@@ -456,7 +486,7 @@ const Menu = function () {
                     <div className='rightBotMenu'>
                         <div className='boxIconMenu'>
                             <div style={{ display: 'flex' }}>
-                                <MdFmdGood className='iconMenu'/>
+                            <img className="iconMenu4" src={microfone} alt="microfone" /> 
                                 <FcOk className='iconMenu2'/>
                             </div>
                             <p className='textMenu'>CAST SÉRIE: 8 episódios sobre a "Pedagogia da cooperação"</p>
@@ -465,7 +495,7 @@ const Menu = function () {
                     <div className='rightBotMenu'>
                         <div className='boxIconMenu'>
                             <div style={{ display: 'flex' }}>
-                                <MdFmdGood className='iconMenu'/>
+                            <img className="iconMenu" src={papel} alt="papel" /> 
                                 <FcOk className='iconMenu2'/>
                             </div>
                             <p className='textMenu'>Metodologias contemporâneas de colaboração</p>
@@ -474,7 +504,7 @@ const Menu = function () {
                     <div className='rightBotMenu'>
                         <div className='boxIconMenu'>
                             <div style={{ display: 'flex' }}>
-                                <MdFmdGood className='iconMenu'/>
+                            <img className="iconMenu" src={layout} alt="layout" /> 
                                 <FcOk className='iconMenu2'/>
                             </div>
                             <p className='textMenu'>Introdução ao tema</p>
@@ -483,7 +513,7 @@ const Menu = function () {
                     <div className='rightBotMenu'>
                         <div className='boxIconMenu'>
                             <div style={{ display: 'flex' }}>
-                                <MdFmdGood className='iconMenu'/>
+                            <img className="iconMenu" src={chat} alt="chat" /> 
                                 <FcOk className='iconMenu2'/>
                             </div>
                             <p className='textMenu'>Três enfoques da Experimentação</p>
@@ -492,7 +522,7 @@ const Menu = function () {
                     <div className='rightBotMenu'>
                         <div className='boxIconMenu'>
                             <div style={{ display: 'flex' }}>
-                                <MdFmdGood className='iconMenu'/>
+                            <img className="iconMenu" src={labirinto} alt="labirinto" /> 
                                 <FcOk className='iconMenu2'/>
                             </div>
                             <p className='textMenu'>Infográfico passo a passo de experimentação no Design Thinking</p>
@@ -506,7 +536,7 @@ const Menu = function () {
         <div className='containerMenu view telefone1'
                 onMouseEnter={() => setIsHovering4(true)} 
                 onMouseLeave={() => setIsHovering4(false)}
-                style={{ height: '40vh',borderBottom: '1px solid #02cbeb' }}
+                style={{ height: '40vh',borderBottom: '1px solid #3D87D9' }}
             >
             <div className={back4()}>
                 <div className='leftMenuCenter'>
@@ -524,7 +554,7 @@ const Menu = function () {
                         <div className='rightBotMenu'>
                             <div className='boxIconMenu'>
                                 <div style={{ display: 'flex' }}>
-                                    <MdFmdGood className='iconMenu'/>
+                                <img className="iconMenu4" src={microfone} alt="microfone" /> 
                                     <FcOk className='iconMenu2'/>
                                 </div>
                                 <p className='textMenu'>PODCAST: Introdução conceitual</p>
@@ -533,7 +563,7 @@ const Menu = function () {
                         <div className='rightBotMenu'>
                             <div className='boxIconMenu'>
                                 <div style={{ display: 'flex' }}>
-                                    <MdFmdGood className='iconMenu'/>
+                                <img className="iconMenu5" src={chave} alt="chave" /> 
                                     <FcOk className='iconMenu2'/>
                                 </div>
                                 <p className='textMenu'>Escolha uma chave para continuar</p>
@@ -547,7 +577,7 @@ const Menu = function () {
                         <div className='rightBotMenu'>
                             <div className='boxIconMenu'>
                                 <div style={{ display: 'flex' }}>
-                                    <MdFmdGood className='iconMenu'/>
+                                <img className="iconMenu" src={layout} alt="layout" /> 
                                     <FcOk className='iconMenu2'/>
                                 </div>
                                 <p className='textMenu'>Introdução ao tema</p>
@@ -556,7 +586,7 @@ const Menu = function () {
                         <div className='rightBotMenu'>
                             <div className='boxIconMenu'>
                                 <div style={{ display: 'flex' }}>
-                                    <MdFmdGood className='iconMenu'/>
+                                <img className="iconMenu" src={chatMobile} alt="chatMobile" /> 
                                     <FcOk className='iconMenu2'/>
                                 </div>
                                 <p className='textMenu'>Vídeo: bate-papo entre criador de narrativas de games RPG e publicitário</p>
@@ -567,7 +597,7 @@ const Menu = function () {
                         <div className='rightBotMenu'>
                             <div className='boxIconMenu'>
                                 <div style={{ display: 'flex' }}>
-                                    <MdFmdGood className='iconMenu'/>
+                                <img className="iconMenu" src={chat} alt="chat" /> 
                                     <FcOk className='iconMenu2'/>
                                 </div>
                                 <p className='textMenu'>Vídeo Depoimento: pesonagem do mundo corporativo</p>
@@ -576,7 +606,7 @@ const Menu = function () {
                         <div className='rightBotMenu'>
                             <div className='boxIconMenu'>
                                 <div style={{ display: 'flex' }}>
-                                    <MdFmdGood className='iconMenu'/>
+                                <img className="iconMenu4" src={microfone} alt="microfone" /> 
                                     <FcOk className='iconMenu2'/>
                                 </div>
                                 <p className='textMenu'>PODCAST: Helena Crescia - como fazer um vom storytelling</p>
@@ -587,7 +617,7 @@ const Menu = function () {
                         <div className='rightBotMenu'>
                             <div className='boxIconMenu'>
                                 <div style={{ display: 'flex' }}>
-                                    <MdFmdGood className='iconMenu'/>
+                                <img className="iconMenu" src={labirinto} alt="labirinto" /> 
                                     <FcOk className='iconMenu2'/>
                                 </div>
                                 <p className='textMenu'>Infográfico com passo a passo para construção de narrativas</p>
@@ -601,7 +631,7 @@ const Menu = function () {
                         <div className='rightBotMenu'>
                             <div className='boxIconMenu'>
                                 <div style={{ display: 'flex' }}>
-                                    <MdFmdGood className='iconMenu'/>
+                                <img className="iconMenu" src={layout} alt="layout" /> 
                                     <FcOk className='iconMenu2'/>
                                 </div>
                                 <p className='textMenu'>Introdução ao tema</p>
@@ -610,7 +640,7 @@ const Menu = function () {
                         <div className='rightBotMenu'>
                             <div className='boxIconMenu'>
                                 <div style={{ display: 'flex' }}>
-                                    <MdFmdGood className='iconMenu'/>
+                                <img className="iconMenu4" src={microfone} alt="microfone" /> 
                                     <FcOk className='iconMenu2'/>
                                 </div>
                                 <p className='textMenu'>CAST SÉRIE: 8 episódios sobre a "Pedagogia da cooperação"</p>
@@ -621,7 +651,7 @@ const Menu = function () {
                         <div className='rightBotMenu'>
                             <div className='boxIconMenu'>
                                 <div style={{ display: 'flex' }}>
-                                    <MdFmdGood className='iconMenu'/>
+                                <img className="iconMenu4" src={microfone} alt="papel" /> 
                                     <FcOk className='iconMenu2'/>
                                 </div>
                                 <p className='textMenu'>Metodologias contemporâneas de colaboração</p>
@@ -635,7 +665,7 @@ const Menu = function () {
                         <div className='rightBotMenu'>
                             <div className='boxIconMenu'>
                                 <div style={{ display: 'flex' }}>
-                                    <MdFmdGood className='iconMenu'/>
+                                <img className="iconMenu" src={layout} alt="layout" />
                                     <FcOk className='iconMenu2'/>
                                 </div>
                                 <p className='textMenu'>Introdução ao tema</p>
@@ -644,7 +674,7 @@ const Menu = function () {
                         <div className='rightBotMenu'>
                             <div className='boxIconMenu'>
                                 <div style={{ display: 'flex' }}>
-                                    <MdFmdGood className='iconMenu'/>
+                                    <img className="iconMenu" src={chat} alt="chat" />
                                     <FcOk className='iconMenu2'/>
                                 </div>
                                 <p className='textMenu'>Três enfoques da esperimentação</p>
@@ -655,7 +685,7 @@ const Menu = function () {
                         <div className='rightBotMenu'>
                             <div className='boxIconMenu'>
                                 <div style={{ display: 'flex' }}>
-                                    <MdFmdGood className='iconMenu'/>
+                                <img className="iconMenu" src={labirinto} alt="labirinto" />
                                     <FcOk className='iconMenu2'/>
                                 </div>
                                 <p className='textMenu'>Infográfico passo a passo de experimentação no Design Thinking</p>
@@ -670,7 +700,7 @@ const Menu = function () {
         <div className='containerMenu mobile'
                 onMouseEnter={() => setIsHovering4(true)} 
                 onMouseLeave={() => setIsHovering4(false)}
-                style={{ height: '88vh',borderBottom: '1px solid #02cbeb' }}
+                style={{ height: '88vh',borderBottom: '1px solid #3D87D9' }}
             >
             <div className={back4()}>
                 <div className='leftMenuCenter'>
@@ -688,7 +718,7 @@ const Menu = function () {
                         <div className='rightBotMenu'>
                             <div className='boxIconMenu'>
                                 <div style={{ display: 'flex' }}>
-                                    <MdFmdGood className='iconMenu'/>
+                                    <img className="iconMenu4" src={microfone} alt="microfone" />
                                     <FcOk className='iconMenu2'/>
                                 </div>
                                 <p className='textMenu'>PODCAST: Introdução conceitual</p>
@@ -697,7 +727,7 @@ const Menu = function () {
                         <div className='rightBotMenu'>
                             <div className='boxIconMenu'>
                                 <div style={{ display: 'flex' }}>
-                                    <MdFmdGood className='iconMenu'/>
+                                <img className="iconMenu5" src={chave} alt="chave" />
                                     <FcOk className='iconMenu2'/>
                                 </div>
                                 <p className='textMenu'>Escolha uma chave para continuar</p>
@@ -714,7 +744,7 @@ const Menu = function () {
                         <div className='rightBotMenu'>
                             <div className='boxIconMenu'>
                                 <div style={{ display: 'flex' }}>
-                                    <MdFmdGood className='iconMenu'/>
+                                <img className="iconMenu" src={layout} alt="layout" />
                                     <FcOk className='iconMenu2'/>
                                 </div>
                                 <p className='textMenu'>Introdução ao tema</p>
@@ -723,7 +753,7 @@ const Menu = function () {
                         <div className='rightBotMenu'>
                             <div className='boxIconMenu'>
                                 <div style={{ display: 'flex' }}>
-                                    <MdFmdGood className='iconMenu'/>
+                                <img className="iconMenu" src={chatMobile} alt="chatMobile" />
                                     <FcOk className='iconMenu2'/>
                                 </div>
                                 <p className='textMenu'>Vídeo: bate-papo entre criador de narrativas de games RPG e publicitário</p>
@@ -732,7 +762,7 @@ const Menu = function () {
                         <div className='rightBotMenu'>
                             <div className='boxIconMenu'>
                                 <div style={{ display: 'flex' }}>
-                                    <MdFmdGood className='iconMenu'/>
+                                <img className="iconMenu" src={chat} alt="chat" />
                                     <FcOk className='iconMenu2'/>
                                 </div>
                                 <p className='textMenu'>Vídeo Depoimento: pesonagem do mundo corporativo</p>
@@ -741,7 +771,7 @@ const Menu = function () {
                         <div className='rightBotMenu'>
                             <div className='boxIconMenu'>
                                 <div style={{ display: 'flex' }}>
-                                    <MdFmdGood className='iconMenu'/>
+                                <img className="iconMenu4" src={microfone} alt="microfone" />
                                     <FcOk className='iconMenu2'/>
                                 </div>
                                 <p className='textMenu'>PODCAST: Helena Crescia - como fazer um vom storytelling</p>
@@ -750,7 +780,7 @@ const Menu = function () {
                         <div className='rightBotMenu'>
                             <div className='boxIconMenu'>
                                 <div style={{ display: 'flex' }}>
-                                    <MdFmdGood className='iconMenu'/>
+                                <img className="iconMenu" src={labirinto} alt="labirinto" />
                                     <FcOk className='iconMenu2'/>
                                 </div>
                                 <p className='textMenu'>Infográfico com passo a passo para construção de narrativas</p>
@@ -767,7 +797,7 @@ const Menu = function () {
                     <div className='rightBotMenu'>
                         <div className='boxIconMenu'>
                             <div style={{ display: 'flex' }}>
-                                <MdFmdGood className='iconMenu'/>
+                            <img className="iconMenu" src={layout} alt="layout" />
                                 <FcOk className='iconMenu2'/>
                             </div>
                             <p className='textMenu'>Introdução ao tema</p>
@@ -776,7 +806,7 @@ const Menu = function () {
                     <div className='rightBotMenu'>
                         <div className='boxIconMenu'>
                             <div style={{ display: 'flex' }}>
-                                <MdFmdGood className='iconMenu'/>
+                            <img className="iconMenu4" src={microfone} alt="microfone" />
                                 <FcOk className='iconMenu2'/>
                             </div>
                             <p className='textMenu'>CAST SÉRIE: 8 episódios sobre a "Pedagogia da cooperação"</p>
@@ -785,7 +815,7 @@ const Menu = function () {
                     <div className='rightBotMenu'>
                         <div className='boxIconMenu'>
                             <div style={{ display: 'flex' }}>
-                                <MdFmdGood className='iconMenu'/>
+                            <img className="iconMenu" src={papel} alt="papel" />
                                 <FcOk className='iconMenu2'/>
                             </div>
                             <p className='textMenu'>Metodologias contemporâneas de colaboração</p>
@@ -802,7 +832,7 @@ const Menu = function () {
                     <div className='rightBotMenu'>
                         <div className='boxIconMenu'>
                             <div style={{ display: 'flex' }}>
-                                <MdFmdGood className='iconMenu'/>
+                            <img className="iconMenu" src={layout} alt="layout" />
                                 <FcOk className='iconMenu2'/>
                             </div>
                             <p className='textMenu'>Introdução ao tema</p>
@@ -811,7 +841,7 @@ const Menu = function () {
                     <div className='rightBotMenu'>
                         <div className='boxIconMenu'>
                             <div style={{ display: 'flex' }}>
-                                <MdFmdGood className='iconMenu'/>
+                            <img className="iconMenu" src={chat} alt="chat" />
                                 <FcOk className='iconMenu2'/>
                             </div>
                             <p className='textMenu'>Três enfoques da Experimentação</p>
@@ -820,7 +850,7 @@ const Menu = function () {
                     <div className='rightBotMenu'>
                         <div className='boxIconMenu'>
                             <div style={{ display: 'flex' }}>
-                                <MdFmdGood className='iconMenu'/>
+                            <img className="iconMenu" src={labirinto} alt="labirinto" />
                                 <FcOk className='iconMenu2'/>
                             </div>
                             <p className='textMenu'>Infográfico passo a passo de experimentação no Design Thinking</p>
@@ -834,7 +864,7 @@ const Menu = function () {
         <div className='containerMenu telefone'
             onMouseEnter={() => setIsHovering5(true)} 
             onMouseLeave={() => setIsHovering5(false)}
-            style={{ height: '206px',borderBottom: '1px solid #02cbeb' }}
+            style={{ height: '206px',borderBottom: '1px solid #3D87D9' }}
         >
             <div className={back5()}>
                 <div className='leftMenuCenter'>
@@ -851,7 +881,7 @@ const Menu = function () {
                     <div className='rightBotMenu'>
                         <div className='boxIconMenu'>
                             <div style={{ display: 'flex' }}>
-                                <MdFmdGood className='iconMenu'/>
+                            <img className="iconMenu" src={layout} alt="layout" />
                                 <FcOk className='iconMenu2'/>
                             </div>
                             <p className='textMenu'>Introdução ao tema</p>
@@ -860,8 +890,7 @@ const Menu = function () {
                     <div className='rightBotMenu'>
                         <div className='boxIconMenu'>
                             <div style={{ display: 'flex' }}>
-                                <MdFmdGood className='iconMenu'/>
-                                <FcOk className='iconMenu2'/>
+                            <img className="iconMenu" src={escada} alt="escada" />
                             </div>
                             <p className='textMenu'>Guia prático para exercer a Exploração Interativa</p>
                         </div>
@@ -869,7 +898,7 @@ const Menu = function () {
                     <div className='rightBotMenu'>
                         <div className='boxIconMenu'>
                             <div style={{ display: 'flex' }}>
-                                <MdFmdGood className='iconMenu'/>
+                            <img className="iconMenu" src={ferramenta} alt="ferramenta" />
                                 <FcOk className='iconMenu2'/>
                             </div>
                             <p className='textMenu'>Ferramenta: Template completo construção de Storytelling</p>
@@ -878,7 +907,7 @@ const Menu = function () {
                     <div className='rightBotMenu'>
                         <div className='boxIconMenu'>
                             <div style={{ display: 'flex' }}>
-                                <MdFmdGood className='iconMenu'/>
+                            <img className="iconMenu" src={ferramenta} alt="ferramenta" />
                                 <FcOk className='iconMenu2'/>
                             </div>
                             <p className='textMenu'>Ferramenta: Template completo 7 práticas de Pedagogia da cooperação</p>
@@ -887,7 +916,7 @@ const Menu = function () {
                     <div className='rightBotMenu'>
                     <div className='boxIconMenu'>
                         <div style={{ display: 'flex' }}>
-                            <MdFmdGood className='iconMenu'/>
+                        <img className="iconMenu" src={ferramenta} alt="ferramenta" />
                             <FcOk className='iconMenu2'/>
                         </div>
                         <p className='textMenu'>Ferramenta: Template completo de passo a passo da experimentação pelo Design Thinking</p>
@@ -899,7 +928,7 @@ const Menu = function () {
         <div className='containerMenu telefone1'
             onMouseEnter={() => setIsHovering5(true)} 
             onMouseLeave={() => setIsHovering5(false)}
-            style={{ height: '22vh',borderBottom: '1px solid #02cbeb' }}
+            style={{ height: '22vh',borderBottom: '1px solid #3D87D9' }}
         >
             <div className={back5()}>
                 <div className='leftMenuCenter'>
@@ -916,7 +945,7 @@ const Menu = function () {
                     <div className='rightBotMenu'>
                         <div className='boxIconMenu'>
                             <div style={{ display: 'flex' }}>
-                                <MdFmdGood className='iconMenu'/>
+                            <img className="iconMenu" src={layout} alt="layout" />
                                 <FcOk className='iconMenu2'/>
                             </div>
                             <p className='textMenu'>Introdução ao tema</p>
@@ -925,7 +954,7 @@ const Menu = function () {
                     <div className='rightBotMenu'>
                         <div className='boxIconMenu'>
                             <div style={{ display: 'flex' }}>
-                                <MdFmdGood className='iconMenu'/>
+                            <img className="iconMenu" src={escada} alt="escada" />
                                 <FcOk className='iconMenu2'/>
                             </div>
                             <p className='textMenu'>Guia prático para exercer a Exploração Interativa</p>
@@ -938,7 +967,7 @@ const Menu = function () {
                     <div className='rightBotMenu'>
                         <div className='boxIconMenu'>
                             <div style={{ display: 'flex' }}>
-                                <MdFmdGood className='iconMenu'/>
+                            <img className="iconMenu" src={ferramenta} alt="ferramenta" />
                                 <FcOk className='iconMenu2'/>
                             </div>
                             <p className='textMenu'>Ferramenta: Template completo construção de Storytelling</p>
@@ -947,7 +976,7 @@ const Menu = function () {
                     <div className='rightBotMenu'>
                         <div className='boxIconMenu'>
                             <div style={{ display: 'flex' }}>
-                                <MdFmdGood className='iconMenu'/>
+                            <img className="iconMenu" src={ferramenta} alt="ferramenta" />
                                 <FcOk className='iconMenu2'/>
                             </div>
                             <p className='textMenu'>Ferramenta: Template completo 7 práticas de Pedagogia da cooperação</p>
@@ -959,7 +988,7 @@ const Menu = function () {
                 <div className='rightBotMenu'>
                     <div className='boxIconMenu'>
                         <div style={{ display: 'flex' }}>
-                            <MdFmdGood className='iconMenu'/>
+                        <img className="iconMenu" src={ferramenta} alt="ferramenta" />
                             <FcOk className='iconMenu2'/>
                         </div>
                         <p className='textMenu'>Ferramenta: Template completo de passo a passo da experimentação pelo Design Thinking</p>
@@ -990,7 +1019,7 @@ const Menu = function () {
                     <div className='rightBotMenu'>
                         <div className='boxIconMenu'>
                             <div style={{ display: 'flex' }}>
-                                <MdFmdGood className='iconMenu'/>
+                            <img className="iconMenu" src={layout} alt="layout" />
                                 <FcOk className='iconMenu2'/>
                             </div>
                             <p className='textMenu'>Introdução ao passo a passo para a transferência de conhecimento</p>
@@ -999,7 +1028,7 @@ const Menu = function () {
                     <div className='rightBotMenu'>
                         <div className='boxIconMenu'>
                             <div style={{ display: 'flex' }}>
-                                <MdFmdGood className='iconMenu'/>
+                            <img className="iconMenu" src={nuvem} alt="nuvem" />
                                 <FcOk className='iconMenu2'/>
                             </div>
                             <p className='textMenu'>Reflexões</p>
@@ -1008,30 +1037,13 @@ const Menu = function () {
                     <div className='rightBotMenu'>
                         <div className='boxIconMenu'>
                             <div style={{ display: 'flex' }}>
-                                <MdFmdGood className='iconMenu'/>
+                            <img className="iconMenu" src={labirinto} alt="labirinto" />
                                 <FcOk className='iconMenu2'/>
                             </div>
                             <p className='textMenu'>Infográfico com visão completa da Trilha de Exploração Interativa</p>
                         </div>
                     </div>
-                    <div className='rightBotMenu'>
-                        <div className='boxIconMenu'>
-                            <div style={{ display: 'flex' }}>
-                                <MdFmdGood className='iconMenu'/>
-                                <FcOk className='iconMenu2'/>
-                            </div>
-                            <p className='textMenu'>Ferramenta: Template completo 7 práticas de Pedagogia da cooperação</p>
-                        </div>
-                    </div>
-                    <div className='rightBotMenu'>
-                        <div className='boxIconMenu'>
-                            <div style={{ display: 'flex' }}>
-                                <MdFmdGood className='iconMenu'/>
-                                <FcOk className='iconMenu2'/>
-                            </div>
-                            <p className='textMenu'>Ferramenta: Template completo de passo a passo da experimentação pelo Design Thinking</p>
-                        </div>
-                    </div>
+                   
                 </div>
             </div>
         </div>
@@ -1056,7 +1068,7 @@ const Menu = function () {
                     <div className='rightBotMenu'>
                         <div className='boxIconMenu'>
                             <div style={{ display: 'flex' }}>
-                                <MdFmdGood className='iconMenu'/>
+                            <img className="iconMenu" src={layout} alt="layout" />
                                 <FcOk className='iconMenu2'/>
                             </div>
                             <p className='textMenu'>Introdução ao passo a passo para a transferência de conhecimento</p>
@@ -1065,7 +1077,7 @@ const Menu = function () {
                     <div className='rightBotMenu'>
                         <div className='boxIconMenu'>
                             <div style={{ display: 'flex' }}>
-                                <MdFmdGood className='iconMenu'/>
+                            <img className="iconMenu" src={nuvem} alt="nuvem" />
                                 <FcOk className='iconMenu2'/>
                             </div>
                             <p className='textMenu'>Reflexões</p>
@@ -1076,30 +1088,10 @@ const Menu = function () {
                     <div className='rightBotMenu'>
                         <div className='boxIconMenu'>
                             <div style={{ display: 'flex' }}>
-                                <MdFmdGood className='iconMenu'/>
+                            <img className="iconMenu" src={labirinto} alt="labirinto" />
                                 <FcOk className='iconMenu2'/>
                             </div>
                             <p className='textMenu'>Infográfico com visão completa da Trilha de Exploração Interativa</p>
-                        </div>
-                    </div>
-                    <div className='rightBotMenu'>
-                        <div className='boxIconMenu'>
-                            <div style={{ display: 'flex' }}>
-                                <MdFmdGood className='iconMenu'/>
-                                <FcOk className='iconMenu2'/>
-                            </div>
-                            <p className='textMenu'>Ferramenta: Template completo 7 práticas de Pedagogia da cooperação</p>
-                        </div>
-                    </div>
-                </div>
-                <div className='rightMiddleMenu'>
-                    <div className='rightBotMenu'>
-                        <div className='boxIconMenu'>
-                            <div style={{ display: 'flex' }}>
-                                <MdFmdGood className='iconMenu'/>
-                                <FcOk className='iconMenu2'/>
-                            </div>
-                            <p className='textMenu'>Ferramenta: Template completo de passo a passo da experimentação pelo Design Thinking</p>
                         </div>
                     </div>
                 </div>
@@ -1107,7 +1099,7 @@ const Menu = function () {
         </div>
         <div className='menuInsight' onClick={() => { navigate('/menu');}}>
             <div style={{ marginTop:'6px',display:'flex' }}>
-                <BsBoxArrowLeft className='iconTopMenu'/>
+                <img className="iconTopMenu" src={exit} alt="exit" />
                 <p className='fontBotNavigate'>SAIR DESTE MÓDULO</p>
             </div>
         </div>

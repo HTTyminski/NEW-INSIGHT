@@ -1,9 +1,9 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 import './styles.css';
 import Ellipse from '../../Assets/Ellipse.png';
 import { MdFmdGood } from "react-icons/md";
+import { useNavigate } from 'react-router-dom';
 
 
 const Home = function () {
@@ -182,14 +182,14 @@ const Home = function () {
 
       <div className="menu">
         <div className='menuButton1'>
-            <div className='menuButton'>
-              <FiChevronLeft className='menuButtons'/>
+            <div className='menuButtonDisable'>
+              <FiChevronLeft className='menuButtonsDisable' />
             </div>
             <div className='menuButton'>
               <MdFmdGood className='menuButtons' onClick={() => { navigate('/menu');}} />
             </div>
             <div className='menuButton'>
-              <FiChevronRight className='menuButtons'/>
+              <FiChevronRight className='menuButtons'  onClick={() => { navigate('/Insight4');}}/>
             </div>
         </div>
       </div>
